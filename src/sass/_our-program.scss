@@ -6,19 +6,37 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $white-color;
-    text-align: center;
+    margin-top: 0px;
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 16px;
+       height: 16px;
+       border-radius: 50%;
+    background-color: $accent-color;
+    transform: translateX(-34px) translateY(0.5px);
+    
+    
     
     }
+}
+
+    .our-program{
+        padding-left: 74px;
+    }
+    
+    
     .caption-name{
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 1.64;
-    align-items: center;
+    
     letter-spacing: 0.08em;
     color: $accent-color;
     margin-bottom: 15px;
-text-align: center;}
+     text-align: start;}
     .caption-description-span{
         display: block;
     }
@@ -37,7 +55,8 @@ text-align: center;}
 font-weight: 500;
 font-size: 12px;
 line-height: 1.67;
-letter-spacing: 0.08em;   
+letter-spacing: 0.08em; 
+color: #B9B9B9;;  
     }
     
             
@@ -45,7 +64,6 @@ letter-spacing: 0.08em;
         margin-left: 10px;
     &::before{
         content: "";
-        
         transform: translateY(-4.5px);
         display:inline-block ;
         margin-right: 10px;
@@ -54,7 +72,11 @@ letter-spacing: 0.08em;
         height: 1px;
         background-color: $accent-color;
     }}
-    
+    .program-container{
+        position: relative;
+        padding-left: 26px;
+        border-left: 1px solid #FFFFFF;
+    }
     
     // .program-list{
     // //    display: block;
@@ -86,7 +108,7 @@ letter-spacing: 0.08em;
         }
 
         .our-program{
-            background-color: $title-text-color;
+            background:linear-gradient($title-text-color 87% , $white-color 13%)
         }
         .choice-title{
             text-align: start;
@@ -116,7 +138,7 @@ letter-spacing: 0.08em;
                 text-align: center;
                 width: 13px;
                 height: 1px;
-                color: $accent-color;
+                background-color: $accent-color;
               }
               
         }
