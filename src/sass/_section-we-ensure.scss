@@ -1,0 +1,34 @@
+.we-ensure .title {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.308;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.we-ensure-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f1f1f1;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 28px;
+  border-left: 2px solid red;
+}
+.we-ensure .item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.667;
+
+  color: #3d3d3d;
+  span {
+    color: #ff6b09;
+  }
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
