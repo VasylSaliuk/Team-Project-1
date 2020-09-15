@@ -9,8 +9,6 @@
 
 .footer-block-01 {
   display: block;
-  // min-width: 320px;
-  // width: auto;
   height: auto;
   background: $title-text-color;
   background-image: url(../images/footer-background-320.png);
@@ -19,7 +17,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // min-width: 320px;
   height: auto;
 }
 
@@ -27,8 +24,6 @@
   padding: 50px 20px;
   display: block;
   width: 320px;
-  // text-align: center;
-  // align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -66,15 +61,6 @@
   color: $white-color;
 }
 
-// КОНТЕЙНЕР!!!!  ПРИБРАТИ!!!!
-// .container {
-//     width: 320px;
-// }
-
-// .footer-form {
-//   color: green;
-// }
-
 .footer-form-registration {
   padding-bottom: 50px;
 }
@@ -86,6 +72,7 @@
 .footer-form-button-submit {
   width: 260px;
   height: 48px;
+
   background: $accent-color;
   border: transparent;
   // margin-left: 10px;
