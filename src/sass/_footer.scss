@@ -2,7 +2,6 @@
   display: block;
   align-items: center;
   text-align: center;
-
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@
   // min-width: 320px;
   // width: auto;
   height: auto;
-  background: #111518;
+  background: $title-text-color;
   background-image: url(../images/footer-background-320.png);
   align-items: center;
   text-align: center;
@@ -44,12 +43,12 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: $white-color;
 
   margin: 0;
 
   &-span {
-    color: #ff6b09;
+    color: $accent-color;
   }
 }
 
@@ -64,7 +63,7 @@
   text-align: center;
   letter-spacing: 0.08em;
 
-  color: #ffffff;
+  color: $white-color;
 }
 
 // КОНТЕЙНЕР!!!!  ПРИБРАТИ!!!!
@@ -72,9 +71,9 @@
 //     width: 320px;
 // }
 
-.footer-form {
-  color: green;
-}
+// .footer-form {
+//   color: green;
+// }
 
 .footer-form-registration {
   padding-bottom: 50px;
@@ -87,7 +86,7 @@
 .footer-form-button-submit {
   width: 260px;
   height: 48px;
-  background: #ff6b09;
+  background: $accent-color;
   border: transparent;
   // margin-left: 10px;
 
@@ -102,12 +101,12 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white-color;
 }
 
 .footer-subscribe-input {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: $white-color;
+  border: 1px solid $white-color;
   box-sizing: border-box;
 
   width: 100%;
@@ -118,7 +117,7 @@
   &:focus {
     outline: none;
     //   color: #FFFFFF;
-    border-color: #ff6b09;
+    border-color: $accent-color;
   }
 }
 
@@ -130,16 +129,20 @@ input::placeholder {
   line-height: 17px;
   letter-spacing: 0.08em;
 
-  color: #ffffff;
+  color: $white-color;
 }
 
 .footer-contacts {
   display: block;
-  padding: 60px 30px 30px 30px;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
 }
 
 .footer-logo {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-contacts-phone {
@@ -154,11 +157,11 @@ input::placeholder {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.08em;
-  color: #111518;
+  color: $title-text-color;
 
   &:focus,
   &:hover {
-    color: #ff6b09;
+    color: $accent-color;
   }
 }
 
@@ -167,13 +170,17 @@ input::placeholder {
   margin-right: 9px;
 }
 
+.footer-img {
+  display: inline;
+}
+
 .instagram {
   display: block;
 }
 
 .footer-copyright {
   display: block;
-  background: #111518;
+  background: $title-text-color;
   padding: 20px 50px;
 
   font-family: Montserrat;
