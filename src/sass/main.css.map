@@ -5,7 +5,11 @@
         "main.scss",
         "utils/_fonts.scss",
         "utils/_modern-normalize.scss",
+        "utils/_variables.scss",
+        "header.scss",
         "_footer.scss"
+        
+        
     ],
     "names": [],
     "file": "main.css"
