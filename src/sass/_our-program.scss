@@ -6,6 +6,8 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $white-color;
+    text-align: center;
+    
     }
     .caption-name{
     font-style: normal;
@@ -14,7 +16,9 @@
     line-height: 1.64;
     align-items: center;
     letter-spacing: 0.08em;
-    color: $accent-color;}
+    color: $accent-color;
+    margin-bottom: 15px;
+text-align: center;}
     .caption-description-span{
         display: block;
     }
@@ -27,8 +31,13 @@
     }
     .caption-description{
         margin-bottom: 5px;
-        text-align: center;
-        vertical-align: inherit;   
+        
+        
+        font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 1.67;
+letter-spacing: 0.08em;   
     }
     
             
@@ -47,14 +56,14 @@
     }}
     
     
-    .program-list{
-       display: block;
-       height: 100%;
-       width: 2px;
-       background-color: #FFFFFF;
-        // border-left: 1px solid #FFFFFF;
-        margin-left: 20px;
-     }
+    // .program-list{
+    // //    display: block;
+    // //    height: 100%;
+    // //    width: 2px;
+    // //    background-color: #FFFFFF;
+    // //     // border-left: 1px solid #FFFFFF;
+    // //     margin-left: 20px;
+    //  }
      .list {
         list-style: none;
         padding: 0;
@@ -79,3 +88,51 @@
         .our-program{
             background-color: $title-text-color;
         }
+        .choice-title{
+            text-align: start;
+            margin-bottom: 30px;
+            margin-top: 0px;
+            color: $white-color;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 1.35;
+            letter-spacing: 0.03em;
+        }
+        .choice-number{
+            display: block;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 1.64;
+            letter-spacing: 0.08em;
+            color: $accent-color;
+            margin-bottom: 10px;
+              
+            &::before{
+                content: "";
+                transform: translateY(-4.5px);
+                display:inline-block ;
+                margin-right: 10px;
+                text-align: center;
+                width: 13px;
+                height: 1px;
+                color: $accent-color;
+              }
+              
+        }
+
+.choice-list-item{
+    margin-bottom: 20px;
+}
+.choise-desciption{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $title-text-color;
+}
+        
+.choice-container{
+    padding: 20px 30px;
+    background-color: $white-color;
+}
