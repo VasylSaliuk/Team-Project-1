@@ -18,7 +18,6 @@
   }
 }
 .teacher-name {
-  margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 20px;
@@ -26,6 +25,10 @@
   letter-spacing: 0.08em;
 
   color: $title-text-color;
+
+  @media screen and (max-width: $tablet - 1) {
+    margin-top: 20px;
+  }
 }
 .teacher-achievment.list {
   padding: 20px 0;
