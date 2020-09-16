@@ -2,7 +2,17 @@
   <div class="container">
     <h2 class="title">Преподаватель</h2>
     <div class="teacher-wrap">
-      <img src="" width="243" alt="Елена Морева" />
+      <picture>
+        <source
+          srcset="
+            ./images/mobile/helena-moreva-320.jpg    1x,
+            ./images/mobile/helena-moreva-320@2x.jpg 2x
+          "
+          media="(max-width: 1679px)"
+        />
+        <img src="" width="243" alt="Елена Морева" />
+      </picture>
+
       <h3 class="teacher-name">Елена Морева</h3>
       <ul class="teacher-achievment list">
         <li class="teacher-achievment item">
@@ -34,7 +44,9 @@
           Houston).</span
         >
       </p>
-      <button type="button">Cambrige English Entry Level Certificate</button>
+      <button class="certificate" type="button" lang="en">
+        Cambrige English Entry Level Certificate
+      </button>
     </div>
   </div>
 </section>

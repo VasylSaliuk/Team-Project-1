@@ -1,0 +1,56 @@
+.we-ensure .title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.308;
+  color: $title-text-color;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.we-ensure-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f1f1f1;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 7px;
+}
+
+.line-dashed .item:not(:last-child) {
+  border-left: 1px dashed $primary-text-color;
+}
+.we-ensure .item {
+  position: relative;
+  padding-left: 28px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.667;
+
+  color: #3d3d3d;
+  span {
+    color: $accent-color;
+  }
+  &:not(:last-child) {
+    padding-bottom: 23px;
+  }
+}
+.item.star::after {
+  content: '*';
+  color: $accent-color;
+}
+.we-ensure.item::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: -7px;
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-image: url(../images/campfire.svg);
+}
