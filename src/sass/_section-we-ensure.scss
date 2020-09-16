@@ -14,11 +14,22 @@
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f1f1f1;
+
+  @media screen and (min-width: $tablet) {
+    width: 688px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+.we-ensure-wrap .container {
+  @media screen and (min-width: $tablet) {
+    width: 688px;
+    padding-left: 79px;
+    padding-right: 50px;
+  }
+}
+.we-ensure .list {
   margin-left: 7px;
 }
 
@@ -39,7 +50,14 @@
   &:not(:last-child) {
     padding-bottom: 23px;
   }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
 }
+
 .item.star::after {
   content: '*';
   color: $accent-color;
