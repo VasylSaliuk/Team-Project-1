@@ -82,14 +82,13 @@
     }}
     .program-list{
         position: relative;
-        // padding-left: 26px;
-        margin-left: auto;
-        margin-right: auto;
-                 
-    }
-    
       
+        margin-left: auto;
+        margin-right: auto;}
+        
+           
     
+         
         .title{
             font-style: normal;
            font-weight: 800;
@@ -105,12 +104,26 @@
         .section{
             padding: 50px 0px;
         }
+        .img-layout{
+            background-image: url('../images/mobile/our-team-mobile.png');
+            background-repeat: no-repeat;
+            background-position: right  bottom ;
 
+        }     
         .our-program{
-            background:linear-gradient($title-text-color 87% , $white-color 13%)
+            
+            background:linear-gradient($title-text-color 87% , $white-color 13%);
+             
+             
+              
         }
+        .lyout-img{
+            background-image: url('../images/mobile/our-team-mobile.png');
+            background-repeat: no-repeat;
+            background-position: right  bottom 670px;}
+        
         .choice-title{
-            text-align: start;
+            
             margin-bottom: 30px;
             margin-top: 0px;
             color: $white-color;
@@ -128,6 +141,7 @@
             letter-spacing: 0.08em;
             color: $accent-color;
             margin-bottom: 10px;
+            
               
             &::before{
                 content: "";
