@@ -1,26 +1,77 @@
 <div class="container">
   <nav class="nav">
-    <a class="logo" href="#">
+    <a class="logo-mob" href="#">
       <svg class="icon" width="80" height="30">
         <use href="./images/sprite.svg#logo-header-mob"></use>
       </svg>
     </a>
-    <div class="menu-container">
-      <ul class="menu-phone list">
-        <li class="menu-phone-item">
-          <a href="" class="line">Программа обучения</a>
+    <div class="header-nav">
+      <ul class="header-nav-list list">
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Программа обучения</a>
+          </li>
         </li>
-        <li class="menu-phone-item">
-          <a href="" class="line">Обо мне</a>
+        <li class="header-nav-item">
+          <a href="#section-teacher" class="header-nav-link">Обо мне</a>
         </li>
-        <li class="menu-phone-item">
-          <a href="" class="line">Варианты обучения</a>
+        <li class="header-nav-item">
+          <a href="#" class="header-nav-link">Варианты обучения</a>
         </li>
-        <li class="menu-phone-item">
-          <a href="" class="line">Контакты</a>
+        <li class="header-nav-item">
+          <a href="#footer" class="header-nav-link">Контакты</a>
         </li>
       </ul>
-      <a href="" class="contacts-mob">Консультация по телефону</a>
+      <a class="consultation-btn" href="#footer">консультация по телефону</a>
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls=""
+      >
+        <svg width="25" height="25" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+        </svg>
+      </button>
     </div>
   </nav>
 </div>
+  <!--Скрытое меню-->
+  <div class="header-black">
+    <div class="container">
+      <div class="header-black-top">
+      <a class="logo-mob" href="#">
+        <svg class="icon" width="80" height="30">
+          <use href="./images/sprite.svg#logo-mob"></use>
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls=""
+      >
+        <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+          <use href="./images/sprite.svg#menu-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="header-black-nav">
+    <ul class="header-black-list list">
+      <li class="header-black-item">
+        <a href="#" class="black-line">Программа обучения</a>
+      </li>
+      <li class="header-black-item">
+        <a href="#" class="black-line">Обо мне</a>
+      </li>
+      <li class="header-black-item">
+        <a href="#" class="black-line">Варианты обучения</a>
+      </li>
+      <li class="header-black-item">
+        <a href="#" class="black-line">Контакты</a>
+      </li>
+    </ul>
+    <a href="#" class="contacts-mob">Консультация по телефону</a>
+    </nav>
+    </div>
+  </div>
+
