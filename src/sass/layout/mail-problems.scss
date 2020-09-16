@@ -1,0 +1,15 @@
+.problems-accent {
+  color: $accent-color;
+}
+
+.main-problems {
+  background-image: linear-gradient($title-text-color 70%, $white-color 30%);
+
+  .choice-title {
+    padding-top: 50px;
+  }
+
+  .choice-container {
+    padding-bottom: 70px;
+  }
+}
