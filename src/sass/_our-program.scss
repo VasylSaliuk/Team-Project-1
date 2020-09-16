@@ -72,13 +72,14 @@ color: #B9B9B9;;
         height: 1px;
         background-color: $accent-color;
     }}
-    .program-container{
+    .program-list{
         position: relative;
         padding-left: 26px;
-        border-left: 1px solid #FFFFFF;
-          
+                 
     }
     
+    .program-list .program-list-item:not(:last-child){
+        border-left: 1px solid #FFFFFF;}
    
      .list {
         list-style: none;
