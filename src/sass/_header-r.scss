@@ -1,0 +1,46 @@
+.title-hero {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.par-simple {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.subtitle-span {
+  color: $accent-color;
+}
+.hero-button {
+  display: block;
+  border: 0;
+  background: $accent-color;
+  width: 260px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 48px;
+  color: $white-color;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
