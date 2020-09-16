@@ -1,9 +1,12 @@
 $mobile: 320px;
 $tablet: 768px;
-$desktop: 1200px;
+$desktop: 1440px;
 
 $primary-text-color: #b9b9b9;
+$secondary-text-color: #3D3D3D;
 $title-text-color: #111518;
 $accent-color: #ff6b09;
 $white-color: #ffffff;
 $background-color-main: #e5e5e5;
+
+$timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);

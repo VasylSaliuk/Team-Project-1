@@ -1,0 +1,135 @@
+.forallsection {
+  background-image: url(/images/Vector.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -300px;
+  margin-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    background-image: url(/images/Vectorfortab.png);
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/Vectorfordesktop.png);
+  }
+}
+@media screen and (min-width: $tablet) {
+  .header-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 116px;
+  }
+}
+.title-hero {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  width: 280px;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.par-simple {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 280px;
+}
+
+.subtitle-span {
+  color: $accent-color;
+}
+.hero-button {
+  display: block;
+  border: 0;
+  background: $accent-color;
+  width: 260px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 48px;
+  color: $white-color;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 auto 36px;
+  cursor: pointer;
+}
+.hero-photo {
+  margin: 0 auto;
+  padding-bottom: 77px;
+}
+.hero-feateres {
+  padding: 0 52px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+.hero-item {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+  color: $title-text-color;
+  padding-left: 68px;
+  list-style: none;
+  min-height: 60px;
+  max-width: 230px;
+  vertical-align: middle;
+}
+.hero-item:nth-child(-n + 2) {
+  margin-bottom: 22px;
+}
+
+.hero-item.adapt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 61px;
+  height: 62px;
+  background-image: url(/images/adapt.svg);
+  margin-right: 10px;
+}
+.hero-item.modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 61px;
+  height: 62px;
+  background-image: url(/images/modern.svg);
+  margin-right: 10px;
+}
+.hero-item.finance::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 61px;
+  height: 62px;
+  background-image: url(/images/finance.svg);
+  margin-right: 10px;
+}
