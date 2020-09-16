@@ -9,8 +9,6 @@
 
 .footer-block-01 {
   display: block;
-  // min-width: 320px;
-  // width: auto;
   height: auto;
   background: $title-text-color;
   background-image: url(../images/footer-background-320.png);
@@ -19,16 +17,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  // min-width: 320px;
   height: auto;
 }
 
 .footer-box {
   padding: 50px 20px;
   display: block;
-  width: 320px;
-  // text-align: center;
-  // align-items: center;
+  // width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,6 +42,16 @@
 
   margin: 0;
 
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 46px;
+    line-height: 1.3;
+  }
+
   &-span {
     color: $accent-color;
   }
@@ -62,18 +67,18 @@
   line-height: 1.25;
   text-align: center;
   letter-spacing: 0.08em;
-
   color: $white-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
-
-// КОНТЕЙНЕР!!!!  ПРИБРАТИ!!!!
-// .container {
-//     width: 320px;
-// }
-
-// .footer-form {
-//   color: green;
-// }
 
 .footer-form-registration {
   padding-bottom: 50px;
@@ -86,6 +91,7 @@
 .footer-form-button-submit {
   width: 260px;
   height: 48px;
+
   background: $accent-color;
   border: transparent;
   // margin-left: 10px;
@@ -114,9 +120,17 @@
   padding-left: 28px;
   background-color: inherit;
 
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    width: 390px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 478px;
+    height: 70px;
+  }
+
   &:focus {
     outline: none;
-    //   color: #FFFFFF;
     border-color: $accent-color;
   }
 }
@@ -128,8 +142,12 @@ input::placeholder {
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.08em;
-
   color: $white-color;
+
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .footer-contacts {
@@ -137,12 +155,21 @@ input::placeholder {
   padding: 30px;
   text-align: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1680px) {
+    display: flex;
+  }
 }
 
 .footer-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .footer-contacts-phone {
