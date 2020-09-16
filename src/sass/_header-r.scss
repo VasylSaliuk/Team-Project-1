@@ -1,3 +1,17 @@
+.forallsection {
+  background-image: url(/images/Vector.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -300px;
+  @media screen and (min-width: $tablet) {
+    background-image: url(/images/Vectorfortab.png);
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url(/images/Vectorfordesktop.png);
+  }
+}
+
 .title-hero {
   font-weight: 800;
   font-size: 20px;
