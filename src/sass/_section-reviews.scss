@@ -1,7 +1,42 @@
+.icon {
+    fill: currentColor;
+    transition: background-color $timing-function;
+}
 
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: blueviolet;
+    transform: scale(1);
+    transition: transform $timing-function;
+}
 
-.link {
-    display: block;
+.social-link:hover,
+.social-link:focus {
+    background-color: rgb(14, 147, 151);
+    color: $white-color;
+    transform: scale(1.25);
+    animation: change-color 1000ms $timing-function;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: rgb(80, 157, 177);
+    }
+    50% {
+        background-color: aquamarine;
+    }
+    100% {
+        background-color: aqua;
+    }
 }
 
 .card-senior {
