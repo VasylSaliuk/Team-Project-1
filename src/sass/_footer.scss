@@ -11,19 +11,44 @@
   display: block;
   height: auto;
   background: $title-text-color;
-  background-image: url(../images/footer-background-320.png);
+  background-image: url(../images/footer/footer-background-320.png);
   align-items: center;
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/footer/footer-background-320@2x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    background-image: url(../images/footer/footer-background-768.png);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/footer/footer-background-768@2x.png);
+  }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/footer/footer-background-1680.png);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/footer/footer-background-1680@2x.png);
+      }
+    
+  }
 }
 
 .footer-box {
   padding: 50px 20px;
   display: block;
-  // width: 320px;
+
   // margin-left: auto;
   // margin-right: auto;
 
@@ -105,9 +130,18 @@
 
 .footer-field {
   margin-top: 20px;
-
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: $white-color;
+  
   @media screen and (min-width: 1440px) {
     margin-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -123,7 +157,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   // display: flex;
   align-items: center;
   text-align: center;
