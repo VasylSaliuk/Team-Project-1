@@ -97,6 +97,7 @@
 
        @media screen and (min-width: $desktop){
           &:nth-child(1n){
+              width: 200px;
                margin-bottom: 30px;}
            
            
@@ -130,8 +131,8 @@
         display:inline-block ;
         margin-right: 10px;
         text-align: center;
-        width: 13px;
-        height: 1px;
+        width: 15px;
+        height: 2px;
         background-color: $accent-color;
     }
     @media screen and (min-width: $desktop){
