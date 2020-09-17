@@ -228,13 +228,13 @@ input::placeholder {
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 0px;
   }
 
   @media screen and (min-width: 1440px) {
     display: flex;
     justify-content: space-between;
-    padding: 63px;
+    padding: 0px;
   }
 }
 
@@ -242,6 +242,13 @@ input::placeholder {
   display: block;
   // margin-left: auto;
   // margin-right: auto;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin: 40px 200px 40px 40px;
+    }
+
+  @media screen and (min-width: 1440px) {
+    margin: 80px 294px 60px 60px;
+  }
 }
 
 .footer-contacts-phone {
@@ -258,6 +265,18 @@ input::placeholder {
   letter-spacing: 0.08em;
   color: $title-text-color;
 
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 39px;
+    font-size: 20px;
+    line-height: 24px;
+    }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 39px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   &:focus,
   &:hover {
     color: $accent-color;
@@ -267,6 +286,21 @@ input::placeholder {
 .footer-icon-tel {
   vertical-align: middle;
   margin-right: 9px;
+  width: 20px;
+  height: 19px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    width: 24px;
+  height: 23px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 30px;
+    height: 28px;    
+  }
+
+
+
 }
 
 .footer-img {
@@ -275,6 +309,16 @@ input::placeholder {
 
 .instagram {
   display: block;
+  
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 39px;
+        }
+
+  @media screen and (min-width: 1440px) {
+    margin-right: 470px;    
+  }
+
 }
 
 .footer-copyright {
@@ -290,4 +334,12 @@ input::placeholder {
 
   align-items: center;
   color: #b9b9b9;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    display: flex;
+        }
+
+  @media screen and (min-width: 1440px) {
+    
+  }
 }

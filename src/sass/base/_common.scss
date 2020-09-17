@@ -57,6 +57,8 @@ body {
   margin-right: auto;
   margin-left: auto;
 
+  border: 1px solid red;
+
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     width: $mobile;
   }
