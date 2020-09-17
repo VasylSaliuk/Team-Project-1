@@ -7,7 +7,8 @@
     text-transform: uppercase;
     color: $white-color;
     margin-top: 0px;
-    &::before{
+    margin-bottom: 10px;
+     &::before{
     content: "";
     position: absolute;
     display: block;
@@ -41,6 +42,7 @@
         display: block;
     }
     .program-list-item {
+        display: inline-block;
       padding-bottom: 43px;
       padding-left: 26px;
      
@@ -82,8 +84,9 @@
     }}
     .program-list{
         position: relative;
-      
-        margin-left: auto;
+        
+        display: inline-block;
+        margin-left: 60px;
         margin-right: auto;}
         
            
@@ -102,6 +105,7 @@
             background-image: url('../images/mobile/our-team-mobile.png');
             background-repeat: no-repeat;
             background-position: right  bottom ;
+            background-size: 176px 136px;
 
         }     
         .our-program{
@@ -150,9 +154,9 @@
               
         }
 
-.choice-list-item{
+ .choice-list-item{
     margin-bottom: 20px;
-}
+ }
 .choise-desciption{
     font-style: normal;
     font-weight: bold;
@@ -165,4 +169,4 @@
     padding: 20px 30px;
     background-color: $white-color;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-}
+ }
