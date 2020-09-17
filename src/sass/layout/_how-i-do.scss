@@ -9,10 +9,11 @@
 .how-i-do-item {
   display: list-item;
   width: 280px;
+  margin-bottom: 15px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
-  &:not(:last-child) {
-    margin-bottom: 15px;
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
   }
 
   &:hover {
