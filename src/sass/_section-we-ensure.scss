@@ -2,6 +2,10 @@
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 26px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+  }
 }
 
 .we-ensure-wrap {
@@ -14,15 +18,28 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 1314px;
+  }
 }
 .we-ensure.list {
   @media screen and (min-width: $tablet) {
     padding-left: 79px;
     padding-right: 50px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-left: 112px;
+    padding-right: 112px;
+  }
 }
 .we-ensure .container {
-  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 688px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1314px;
+  }
 }
 .line-dashed .item:not(:last-child) {
   border-left: 1px dashed $primary-text-color;
@@ -43,9 +60,15 @@
   }
 
   @media screen and (min-width: $tablet) {
+    padding-left: 32px;
     &:not(:last-child) {
       padding-bottom: 20px;
     }
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 41px;
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
@@ -57,9 +80,17 @@
   content: ' ';
   position: absolute;
   top: 0;
-  left: -7px;
+  left: 0;
+  transform: translateX(-50%);
   display: inline-block;
   width: 15px;
   height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-image: url(../images/campfire.svg);
+
+  @media screen and (min-width: $desktop) {
+    width: 22px;
+    height: 30px;
+  }
 }
