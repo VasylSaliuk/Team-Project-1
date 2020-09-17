@@ -322,8 +322,13 @@ input::placeholder {
 }
 
 .footer-copyright {
-  display: block;
   background: $title-text-color;
+
+}
+
+.footer-copyright-box {
+  display: block;
+  
   padding: 20px 50px;
 
   font-family: Montserrat;
@@ -337,9 +342,11 @@ input::placeholder {
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: flex;
+    padding: 20px 0px 20px 40px;
         }
 
   @media screen and (min-width: 1440px) {
-    
+    display: flex;
+    padding: 22px 0px 22px 63px;
   }
 }
