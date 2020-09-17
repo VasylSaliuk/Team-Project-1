@@ -8,6 +8,10 @@
     color: $white-color;
     margin-top: 0px;
     margin-bottom: 25px;
+    @media screen and (min-width: $desktop){
+        font-size: 20px;
+        line-height: 1.4;
+    }
      &::before{
     content: "";
     position: absolute;
@@ -20,10 +24,13 @@
     @media screen and (min-width: $desktop){
         transform: translateX(-2px) translateY(-60px); 
     }
-     
     
-    }
+    
+    
+    
 }
+}
+
 
     .our-program{
         padding-left: 74px;
@@ -43,6 +50,7 @@
 
     .caption-description-span{
         display: block;
+        margin-bottom: 7px;
     }
     .program-list-item {
         
@@ -86,7 +94,15 @@
         &:not(:last-child){
         margin-right: 50px;
         margin-bottom: 0px;}
-       
+
+       @media screen and (min-width: $desktop){
+          &:nth-child(1n){
+               margin-bottom: 30px;}
+           
+           
+
+
+       }
     }
 }
 
@@ -98,7 +114,11 @@
       font-size: 12px;
       line-height: 1.67;
        letter-spacing: 0.08em; 
-       color: #B9B9B9;;  
+       color: #B9B9B9;
+       @media screen and (min-width: $desktop){
+           font-size: 18px;
+           line-height: 1.56;
+       }
     }
     
             
@@ -113,7 +133,12 @@
         width: 13px;
         height: 1px;
         background-color: $accent-color;
-    }}
+    }
+    @media screen and (min-width: $desktop){
+        font-size: 20px;
+        line-height: 1.64;
+    }
+}
     .program-list{
         position: relative;
                
@@ -121,7 +146,7 @@
         margin-right: auto;
         @media screen and (min-width: $desktop){
             display: flex;
-            
+           margin-left: 0px; 
 
         }
 
