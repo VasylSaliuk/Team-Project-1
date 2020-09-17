@@ -5,43 +5,54 @@
 
   @media screen and (min-width: $desktop) {
     font-size: 46px;
+    margin-bottom: 50px;
   }
 }
 
 .we-ensure-wrap {
+  @media screen and (max-width: $tablet - 1) {
+    background-color: #f1f1f1;
+  }
+}
+.we-ensure-box {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #f1f1f1;
-
   @media screen and (min-width: $tablet) {
     width: 688px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-left: 79px;
+    padding-right: 50px;
+    background-color: #f1f1f1;
   }
 
   @media screen and (min-width: $desktop) {
     width: 1314px;
-  }
-}
-
-.we-ensure.list {
-  @media screen and (min-width: $tablet) {
-    padding-left: 79px;
-    padding-right: 50px;
-  }
-  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 45px;
     padding-left: 112px;
     padding-right: 112px;
   }
 }
-.we-ensure .container {
-  @media screen and (min-width: $tablet) {
-    width: 688px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 1314px;
-  }
-}
+// .we-ensure .container {
+//   @media screen and (min-width: $tablet) {
+//     width: 688px;
+//     background-color: #f1f1f1;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     width: 1314px;
+//   }
+// }
+
+// .we-ensure.list {
+//   // @media screen and (min-width: $tablet) {
+//   //   padding-left: 79px;
+//   //   padding-right: 50px;
+//   // }
+//   @media screen and (min-width: $desktop) {
+//     padding-left: 112px;
+//     padding-right: 112px;
+//   }
+// }
+
 .line-dashed .item:not(:last-child) {
   border-left: 1px dashed $primary-text-color;
 }
