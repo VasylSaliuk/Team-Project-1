@@ -3,10 +3,8 @@
 header {
   position: relative;
   padding-top: 35px;
-  padding-bottom: 50px;
   @media screen and (min-width: $tablet) {
     padding-top: 40px;
-    padding-bottom: 50px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 45px;
@@ -22,13 +20,10 @@ header {
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 45px;
-    padding-left: 40px;
     padding-right: 40px;
   }
 }
@@ -98,7 +93,7 @@ header {
     cursor: pointer;
   }
   @media screen and (min-width: $desktop) {
-    margin: 0;
+    margin-left: 60px;
     width: 336px;
     height: 70px;
     font-size: 14px;
@@ -109,7 +104,8 @@ header {
 }
 
 /* Кнопка-бургер */
-.menu-button {
+.menu-button,
+.menu-button-black {
   display: inline-flex;
   align-items: center;
   padding: 0;
@@ -124,6 +120,20 @@ header {
   }
 }
 
+.menu-button .icon-menu {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+/*.menu-button-black .icon-cross {
+  display: block;
+}
+.menu-button-black.is-open .icon-cross {
+  display: none;
+}
+*/
+
 /* Black меню*/
 
 .header-black {
@@ -133,6 +143,7 @@ header {
   height: 100vh;
   top: 0;
   left: 50%;
+
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 100;
@@ -141,14 +152,34 @@ header {
   @media screen and (min-width: $desktop) {
     display: none;
   }
+  &.is-open {
+    display: block;
+    @media screen and (min-width: $desktop) {
+      display: none;
+    }
+  }
 }
-.header-black-list {
-  margin-top: 50px;
-  margin-right: auto;
+
+.header-black-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
-  margin-left: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 72px;
+  }
+}
+
+.header-black-list {
+  margin-right: auto;
+  margin-left: auto;
   list-style: none;
-  text-align: start;
+  width: 260px;
+
+  @media screen and (min-width: $tablet) {
+    width: 332px;
+  }
 }
 
 .header-black-item:not(:last-child) {
@@ -162,4 +193,27 @@ header {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: $white-color;
+}
+.black-line:hover,
+.black-line:focus {
+  color: $accent-color;
+}
+
+.consultation-black-btn {
+  display: block;
+  width: 260px;
+  height: 48px;
+  border: 2px solid $accent-color;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 48px;
+  color: $accent-color;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }

@@ -1,22 +1,30 @@
-.title-big {
+.we-ensure .title {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 26px;
-  line-height: 1.308;
 }
 
 .we-ensure-wrap {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f1f1f1;
-}
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 7px;
+
+  @media screen and (min-width: $tablet) {
+    width: 688px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
+.we-ensure.list {
+  @media screen and (min-width: $tablet) {
+    padding-left: 79px;
+    padding-right: 50px;
+  }
+}
+.we-ensure .container {
+  width: 100%;
+}
 .line-dashed .item:not(:last-child) {
   border-left: 1px dashed $primary-text-color;
 }
@@ -34,7 +42,14 @@
   &:not(:last-child) {
     padding-bottom: 23px;
   }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+  }
 }
+
 .item.star::after {
   content: '*';
   color: $accent-color;
