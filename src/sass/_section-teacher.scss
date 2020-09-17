@@ -17,6 +17,16 @@
     display: flex;
   }
 }
+
+.teacher-photo {
+  max-width: none;
+  flex-basis: 243px;
+}
+.teacher-achievment-box {
+  @media screen and (min-width: $tablet) {
+    margin-left: 40px;
+  }
+}
 .teacher-name {
   margin-bottom: 10px;
   font-weight: 800;
