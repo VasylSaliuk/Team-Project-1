@@ -8,13 +8,14 @@
 
 .how-i-do-item {
   display: list-item;
-
   width: 280px;
+  margin-bottom: 15px;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
-  &:not(:last-child) {
-    margin-bottom: 15px;
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
   }
+
   &:hover {
     background-color: $accent-color;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
@@ -25,9 +26,27 @@
     .how-i-do-text-tittle,
     .how-i-do-text {
       color: $white-color;
+      &:after {
+        background-color: $white-color;
+      }
     }
-    .how-i-do-decorate {
-      color: $white-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 335px;
+    margin-bottom: 30px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 425px;
+    margin-bottom: 20px;
+
+    &:not(:nth-child(2n-1)) {
+      margin-right: 20px;
     }
   }
 }
@@ -64,21 +83,15 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: $title-text-color;
-}
 
-.how-i-do-decorate {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.65;
-
-  display: block;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.08em;
-  margin-left: auto;
-  margin-right: auto;
-
-  color: $accent-color;
+  &:after {
+    content: '';
+    margin: 20px auto 20px;
+    display: block;
+    background-color: $accent-color;
+    width: 25px;
+    height: 2px;
+  }
 }
 
 .how-i-do-text {
