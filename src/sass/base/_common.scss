@@ -62,9 +62,13 @@ body {
   }
   @media screen and (min-width: $tablet) {
     width: $tablet;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   @media screen and (min-width: $desktop) {
     width: $desktop;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 .title {
