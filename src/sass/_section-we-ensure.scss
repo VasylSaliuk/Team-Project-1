@@ -15,15 +15,15 @@
     margin-left: auto;
   }
 }
-
-.we-ensure-wrap .container {
+.we-ensure.list {
   @media screen and (min-width: $tablet) {
-    width: 688px;
     padding-left: 79px;
     padding-right: 50px;
   }
 }
-
+.we-ensure .container {
+  width: 100%;
+}
 .line-dashed .item:not(:last-child) {
   border-left: 1px dashed $primary-text-color;
 }
