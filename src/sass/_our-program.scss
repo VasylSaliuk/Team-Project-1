@@ -17,6 +17,9 @@
     border-radius: 50%;
     background-color: $accent-color;
     transform: translateX(-33px) translateY(0px);
+    @media screen and (min-width: $desktop){
+        transform: translateX(-2px) translateY(-60px); 
+    }
      
     
     }
@@ -46,13 +49,20 @@
       padding-bottom: 43px;
       padding-left: 26px;
      
-
       &:not(:last-child){
         border-left: 2px solid #FFFFFF;
               }
          &:last-child{
              padding-left: 28px;
-         }     
+         } 
+         @media screen and (min-width: $desktop){
+             border-left:none;
+             &:not(:last-child){
+                border-left: none;
+                      }
+                      padding-bottom: 0px;
+                      padding-top: 50px;
+         }    
     }
        .caption-list{
         @media screen and (min-width: $tablet){
@@ -60,6 +70,10 @@
             justify-content: flex-start;
             flex-direction: row;
            
+        }
+        @media screen and (min-width: $desktop){
+            display: block;
+            
         }
        }
        .caption-list-item{
@@ -102,10 +116,16 @@
     }}
     .program-list{
         position: relative;
-        
-        display: inline-block;
+               
         margin-left: 60px;
-        margin-right: auto;}
+        margin-right: auto;
+        @media screen and (min-width: $desktop){
+            display: flex;
+            
+
+        }
+
+    }
         
           
          
@@ -119,6 +139,11 @@
             @media screen and (min-width: $tablet){
                 font-size: 26px;
                 text-align: start;
+                @media screen and (min-width: $desktop){
+                    font-weight: 800;
+                    font-size: 46px;
+                    margin-bottom: 100px;
+                }
             } 
         }
         .section{
@@ -170,6 +195,9 @@
                 width: 100%;
                 text-align: center;
                 font-size: 26px;
+            }
+            @media screen and (min-width: $desktop){
+                display: none;
             }
         }
         .choice-number{
