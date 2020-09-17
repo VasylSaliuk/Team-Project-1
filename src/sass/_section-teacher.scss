@@ -31,7 +31,7 @@
   }
 }
 .teacher-achievment.list {
-  padding: 20px 0;
+  padding-top: 20px;
   border-top: 1px solid $primary-text-color;
 }
 
@@ -60,6 +60,11 @@
   background-image: url(../images/icon-check.svg);
   margin-right: 10px;
 }
+
+.teacher.how-i-do-decorate {
+  text-align: left;
+  margin: 5px 0;
+}
 .teacher-achievment.desc {
   margin-bottom: 15px;
   font-weight: 500;
@@ -68,14 +73,14 @@
 
   color: $primary-text-color;
 
-  &:first-of-type::before {
-    content: '';
-    display: block;
-    margin-bottom: 20px;
-    width: 20px;
-    height: 2px;
-    background-color: $accent-color;
-  }
+  // &:first-of-type::before {
+  //   content: '';
+  //   display: block;
+  //   margin-bottom: 20px;
+  //   width: 20px;
+  //   height: 2px;
+  //   background-color: $accent-color;
+  // }
 
   &:last-of-type {
     margin-bottom: 10px;
