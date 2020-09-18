@@ -9,6 +9,7 @@
     background-image: url(/images/Vectorfortab.png);
   }
   @media screen and (min-width: $desktop) {
+    margin-bottom: 130px;
     background-image: url(/images/Vectorfordesktop.png);
   }
 }
@@ -21,6 +22,7 @@
     margin-bottom: 116px;
   }
 }
+
 .title-hero {
   font-weight: 800;
   font-size: 20px;
@@ -30,6 +32,18 @@
   color: $title-text-color;
   margin-top: 0;
   margin-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    width: 300px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    width: 612px;
+    margin-top: 30px;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 .par-simple {
   font-weight: 500;
@@ -38,16 +52,29 @@
   letter-spacing: 0.08em;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 .subtitle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.57;
+  line-height: 1.65;
   letter-spacing: 0.08em;
   color: $title-text-color;
   margin-top: 0;
   margin-bottom: 30px;
   width: 280px;
+  @media screen and (min-width: $tablet) {
+    width: 300px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.65;
+    width: 612px;
+  }
 }
 
 .subtitle-span {
@@ -59,7 +86,7 @@
   background: $accent-color;
   width: 260px;
   height: 48px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   line-height: 48px;
   color: $white-color;
@@ -67,12 +94,27 @@
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin: 0 auto 36px;
+  margin-bottom: 30px;
   cursor: pointer;
+  @media screen and (min-width: $desktop) {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 70px;
+  }
 }
 .hero-photo {
   margin: 0 auto;
   padding-bottom: 77px;
+  @media screen and (min-width: $tablet) {
+    width: 377px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 641px;
+    margin: 0;
+  }
 }
 .hero-feateres {
   padding: 0 52px;
@@ -95,6 +137,16 @@
   min-height: 60px;
   max-width: 230px;
   vertical-align: middle;
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.65;
+    min-height: 66px;
+    max-width: 486px;
+    background-repeat: no-repeat;
+    margin-left: 0;
+    padding-left: 84px;
+    padding-top: 18px;
+  }
 }
 .hero-item:nth-child(-n + 2) {
   margin-bottom: 22px;
@@ -110,6 +162,12 @@
   height: 62px;
   background-image: url(/images/adapt.svg);
   margin-right: 10px;
+  @media screen and (min-width: $desktop) {
+    width: 100px;
+    height: 102px;
+    background-repeat: no-repeat;
+    background-image: url(/images/imghero/adapt-d.svg);
+  }
 }
 .hero-item.modern::before {
   content: '';
@@ -121,6 +179,12 @@
   height: 62px;
   background-image: url(/images/modern.svg);
   margin-right: 10px;
+  @media screen and (min-width: $desktop) {
+    width: 100px;
+    height: 102px;
+    background-repeat: no-repeat;
+    background-image: url(/images/imghero/modern-d.svg);
+  }
 }
 .hero-item.finance::before {
   content: '';
@@ -132,4 +196,10 @@
   height: 62px;
   background-image: url(/images/finance.svg);
   margin-right: 10px;
+  @media screen and (min-width: $desktop) {
+    width: 100px;
+    height: 102px;
+    background-repeat: no-repeat;
+    background-image: url(/images/imghero/finance-d.svg);
+  }
 }

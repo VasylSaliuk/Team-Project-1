@@ -51,7 +51,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 60px;
   }
 }
 .header-nav-item:not(:first-child) {
@@ -100,6 +99,7 @@ header {
     font-weight: bold;
     letter-spacing: 1.5px;
     line-height: 68px;
+    cursor: pointer;
   }
 }
 
