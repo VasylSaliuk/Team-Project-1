@@ -18,19 +18,31 @@
           <input
             class="footer-subscribe-input"
             name="name"
-            placeholder="Имя*"
-            required=""
+            placeholder="Имя (кирилица)"
+            required
             type="text"
+            pattern="^[А-Яа-яЁё\s]+$"
           />
         </div>
 
-        <div class="footer-field">
+        <!-- <div class="footer-field">
           <input
             class="footer-subscribe-input"
             name="phone"
             placeholder="Телефон*"
             required=""
             type="tel"
+          />
+        </div> -->
+
+        <div class="footer-field">
+          <input
+            class="footer-subscribe-input"
+            name="phone"
+            placeholder="Телефон (10 цифр)"
+            required
+            type="tel"
+            pattern="[0-9]{10}"
           />
         </div>
       </div>
@@ -44,19 +56,68 @@
 <div class="footer-contacts container" id="contacts">
   <a class="footer-logo" href="#"
     ><picture class="footer-picture"
-      ><source
-        media="(min-width: 320px)"
-        srcset="./images/footer-logo-320.png" />
+      >
+      
+     
+
+        <source
+          srcset="
+          ./images/footer/footer-logo-768.jpg     1x,
+          ./images/footer/footer-logo-768@2x.jpg 2x
+          "   media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+          ./images/footer/footer-logo-320.jpg     1x,
+          ./images/footer/footer-logo-320@2x.jpg 2x
+          "   media="(max-width: 767px)"
+        />
+
       <img
         class="footer-img"
         alt="icon with logo"
-        src="./images/footer-logo-320.svg"
-        width="85"
-        height="30" /></picture
-  ></a>
+        src="./images/footer/footer-logo-768.jpg"     
+       
+        /></picture       
+      >
+
+      <!-- <picture>
+        <source
+          srcset="
+            ./images/team/desktop/team_card_1.jpg    1x,
+            ./images/team/desktop/team_card_1@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/team/tablet/team_card_1.jpg     1x,
+            ./images/team/desktop/team_card_1@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/team/mobile/team_card_1.jpg     1x,
+            ./images/team/desktop/team_card_1@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/team/desktop/team_card_1.jpg"
+          width="450"
+          height="460"
+          alt="Игорь Демьяненко"
+        />
+      </picture> -->
+
+
+
+  </a>
 
   <a class="footer-contacts-phone" href="tel:+380000000000">
-    <svg class="footer-icon-tel" width="20" height="20">
+    <svg class="footer-icon-tel" >
       <use href="./images/sprite.svg#icon-tel"></use>
     </svg>
     +38 (000) 000 00 00</a
@@ -79,6 +140,7 @@
   ></a>
 </div>
 <!-- Секція футера 3 -->
+
 <div class="footer-copyright">
-  <div>@ Все права защищены, 2019</div>
+  <div class="footer-copyright-box container">@ Все права защищены, 2019</div>
 </div>
