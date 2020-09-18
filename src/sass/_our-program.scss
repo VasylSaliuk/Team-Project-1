@@ -43,8 +43,7 @@
         margin-bottom: 7px;
     }
     .program-list-item {
-        
-      padding-bottom: 43px;
+       padding-bottom: 43px;
       padding-left: 26px;
      
       &:not(:last-child){
@@ -60,8 +59,12 @@
                       }
                       padding-bottom: 0px;
                       padding-top: 50px;
+
+                     
          }    
+         
     }
+
        .caption-list{
         @media screen and (min-width: $tablet){
             display: flex;
@@ -131,13 +134,14 @@
     }
 }
     .program-list{
-        position: relative;
+        // position: relative;
               
         margin-left: 94px;
-        margin-right: auto;
+                margin-right: auto;
         @media screen and (min-width: $desktop){
             display: flex;
            margin-left: 0px; 
+          
 
         }
 
@@ -163,24 +167,31 @@
             } 
         }
         
-        .img-layout{
-            background-image: url('../images/mobile/our-team-mobile.png');
-            background-repeat: no-repeat;
-            background-position: right  bottom ;
-          
-
-        }     
+        
         .our-program{
-            
+            position: relative;
             background:linear-gradient($title-text-color 87% , $white-color 13%);
+            @media screen and (min-width: $desktop){
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                display: block;
+                height: 2px;
+                background-color: #FFFFFF;
+                transform: translateY(154px);
+            }}}
+    
+           
              
              
               
-        }
+        
         .lyout-img{
+            
             background-image: url('../images/mobile/our-team-mobile.png');
             background-repeat: no-repeat;
-            background-position: right  bottom 670px;}
+            background-position: right  bottom 550px;}
 
             .choice-list{
                 @media screen and (min-width: $tablet){
