@@ -4,15 +4,6 @@
   @media screen and (min-width: $desktop) {
     padding-bottom: 130px;
   }
-
-  & .container {
-    @media screen and (min-width: $tablet) {
-      width: 708px;
-    }
-    @media screen and (min-width: $desktop) {
-      width: 1205px;
-    }
-  }
 }
 
 .teacher.title {
@@ -32,6 +23,9 @@
 .teacher-wrap {
   @media screen and (min-width: $tablet) {
     display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1205px;
   }
 }
 
