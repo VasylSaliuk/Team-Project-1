@@ -165,125 +165,96 @@
         display: block;
         margin-bottom: 7px;
     }
-    
+  
+    .choice-title{
+        width: 180px; 
+         margin-bottom: 30px;
+         margin-top: 0px;
+         color: $white-color;
+         font-weight: 800;
+         font-size: 20px;
+         line-height: 1.35;
+         letter-spacing: 0.03em;
+         @media screen and (min-width: $tablet){
+             width: 100%;
+             text-align: center;
+             font-size: 26px;}
 
-       
+         @media screen and (min-width: $desktop){
+             display: none; }
+     }     
       
-
+     .choice-container{
+        padding: 20px 30px;
+        background-color: $white-color;
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        @media screen and (min-width: $desktop){
+            padding: 70px 80px;
+        }
+     }
     
-            
-    .caption-name{
-       
-    
-   
-}
-    
-        
-          
-         
-        
-
-        
-        
-        
-    
-           
-             
-             
-              
-        
-        
-
-            .choice-list{
-                @media screen and (min-width: $tablet){
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin: -15px;
-                }
+.choice-list{
+     @media screen and (min-width: $tablet){
+            display: flex;
+             flex-wrap: wrap;
+             margin: -15px;}
             }
-            .choice-list-item{
-                margin-bottom: 20px;
-                @media screen and (min-width: $tablet){
-                    width: calc((100% - 15px * 4) / 2);
-                    margin: 15px;
-                } 
-                @media screen and (min-width: $desktop){
-                    width: calc((100% - 15px * 6) / 3);
-                }
+
+.choice-list-item{
+    margin-bottom: 20px;
+
+        @media screen and (min-width: $tablet){
+             width: calc((100% - 15px * 4) / 2);
+            margin: 15px;} 
+
+        @media screen and (min-width: $desktop){
+                    width: calc((100% - 15px * 6) / 3);}
              }
-        .choice-title{
-           width: 180px; 
-            margin-bottom: 30px;
-            margin-top: 0px;
-            color: $white-color;
-            font-weight: 800;
-            font-size: 20px;
-            line-height: 1.35;
-            letter-spacing: 0.03em;
-            @media screen and (min-width: $tablet){
-                width: 100%;
-                text-align: center;
-                font-size: 26px;
-            }
-            @media screen and (min-width: $desktop){
-                display: none;
-            }
-        }
-        .choice-number{
-            display: block;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 1.64;
-            letter-spacing: 0.08em;
-            color: $accent-color;
-            margin-bottom: 10px;
+        
+.choice-number{
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: 0.08em;
+    color: $accent-color;
+    margin-bottom: 10px;
             
+    &::before{
+    content: "";
+    transform: translateY(-4.5px);
+    display:inline-block ;
+    margin-right: 10px;
+    text-align: center;
+    width: 13px;
+    height: 1px;
+    background-color: $accent-color;}
               
-            &::before{
-                content: "";
-                transform: translateY(-4.5px);
-                display:inline-block ;
-                margin-right: 10px;
-                text-align: center;
-                width: 13px;
-                height: 1px;
-                background-color: $accent-color;
-                
-              }
-              
-              @media screen and (min-width: $desktop){
-                  font-size: 20px;
-                  line-height: 1.64;
-                  &::before{
-                    content: "";
-                    transform: translateY(-6.5px);
-                    display:inline-block ;
-                    margin-right: 10px;
-                    text-align: center;
-                    width: 14px;
-                    height: 2px;
-                    background-color: $accent-color;
-                    
-                  }
-              } 
-        }
+     @media screen and (min-width: $desktop){
+     font-size: 20px;
+    line-height: 1.64;
 
- 
+      &::before{
+        content: "";
+        transform: translateY(-6.5px);
+        display:inline-block ;
+        margin-right: 10px;
+        text-align: center;
+        width: 14px;
+        height: 2px;
+        background-color: $accent-color;}
+    }}
+
 .choise-desciption{
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.43;
     color: $title-text-color;
-    @media screen and (min-width: $desktop){
+
+     @media screen and (min-width: $desktop){
         font-size: 20px;
-        line-height: 1.2;
-    }
+        line-height: 1.2;}
 }
         
-.choice-container{
-    padding: 20px 30px;
-    background-color: $white-color;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
- }
