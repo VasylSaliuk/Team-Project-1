@@ -121,7 +121,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    padding: 0;
   }
 }
 .hero-item {
@@ -163,8 +162,8 @@
   background-image: url(/images/adapt.svg);
   margin-right: 10px;
   @media screen and (min-width: $desktop) {
-    width: 100px;
-    height: 102px;
+    width: 103px;
+    height: 105px;
     background-repeat: no-repeat;
     background-image: url(/images/imghero/adapt-d.svg);
   }
@@ -180,8 +179,8 @@
   background-image: url(/images/modern.svg);
   margin-right: 10px;
   @media screen and (min-width: $desktop) {
-    width: 100px;
-    height: 102px;
+    width: 103px;
+    height: 105px;
     background-repeat: no-repeat;
     background-image: url(/images/imghero/modern-d.svg);
   }
@@ -197,8 +196,8 @@
   background-image: url(/images/finance.svg);
   margin-right: 10px;
   @media screen and (min-width: $desktop) {
-    width: 100px;
-    height: 102px;
+    width: 103px;
+    height: 105px;
     background-repeat: no-repeat;
     background-image: url(/images/imghero/finance-d.svg);
   }

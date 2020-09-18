@@ -1,4 +1,5 @@
 const links = document.querySelectorAll('.header-hero .hero-div a');
+//'.header-nav-list .header-nav-item a'
 
 for (const link of links) {
   link.addEventListener('click', clickHandler);
