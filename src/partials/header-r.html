@@ -11,13 +11,36 @@
       </p>
       <a href="#footer" class="hero-button">хочу на бесплатное занятие</a>
     </div>
-    <img
-      src="./images/mobile/hero-photo.png"
-      width="208"
-      height="178"
-      alt="HellEnstudy"
-      class="hero-photo"
-    />
+    <picture>
+      <source
+        srcset="
+          ./images/imghero/hero-photo-desktop.png  1x,
+          ./images/imghero/hero-photo-desktop1.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/imghero/hero-photo-tablet.png  1x,
+          ./images/imghero/hero-photo-tablet1.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/imghero/hero-photo-mobile1.png 1x,
+          ./images/mobile/hero-photo.png          2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        src="./images/mobile/hero-photo.png"
+        width="208"
+        height="178"
+        alt="HellEnstudy"
+        class="hero-photo"
+      />
+    </picture>
   </section>
   <ul class="container hero-feateres">
     <li class="hero-item adapt">Адаптированная авторская программа ВНО</li>
