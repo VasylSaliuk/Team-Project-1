@@ -1,16 +1,23 @@
 <section class="section teacher">
   <div class="container">
-    <h2 class="title">Преподаватель</h2>
+    <h2 class="teacher title">Преподаватель</h2>
     <div class="teacher-wrap">
       <picture>
+        <source
+          srcset="
+            ./images/desktop/helena-moreva.jpg    1x,
+            ./images/desktop/helena-moreva@2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
         <source
           srcset="
             ./images/mobile/helena-moreva-320.jpg    1x,
             ./images/mobile/helena-moreva-320@2x.jpg 2x
           "
-          media="(max-width: 1679px)"
+          media="(max-width: 1439px)"
         />
-        <img class="teacher-photo" src="" width="243" alt="Елена Морева" />
+        <img class="teacher-photo" src="" alt="Елена Морева" />
       </picture>
 
       <div class="teacher-achievment-box">
@@ -27,8 +34,8 @@
             (Preliminary English Test)
           </li>
         </ul>
-        <p class="teacher how-i-do-decorate">—</p>
-        <p class="teacher-achievment desc">
+
+        <p class="teacher-achievment desc decorate-line">
           Высшее образование получила в Институте международных отношений НАУ по
           специальности переводчик-аналитик.
         </p>
