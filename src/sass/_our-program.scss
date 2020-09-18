@@ -12,12 +12,6 @@
         transform: translateY(154px);
     }}}
 
-  .lyout-img{   
-        background-image: url('../images/mobile/our-team-mobile.png');
-        background-repeat: no-repeat;
-        background-position: right  bottom 550px;}
-
-
    .title-w{
          color: $white-color;
          text-align: center;
@@ -165,6 +159,20 @@
         display: block;
         margin-bottom: 7px;
     }
+
+   .img-layout{
+    position: absolute;
+    
+    right: 0;
+    transform: translateY(-125%);
+    @media screen and (min-width: $desktop){
+        left: 0;
+        transform: translateY(-60%);
+        opacity: 0.5;
+    }
+
+  }
+
   
     .choice-title{
         width: 180px; 
@@ -183,13 +191,14 @@
          @media screen and (min-width: $desktop){
              display: none; }
      }     
-      
+    
      .choice-container{
         padding: 20px 30px;
         background-color: $white-color;
         box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
         @media screen and (min-width: $desktop){
             padding: 70px 80px;
+           
         }
      }
     
