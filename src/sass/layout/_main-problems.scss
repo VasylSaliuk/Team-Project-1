@@ -4,12 +4,10 @@
 
 .main-problems {
   background-image: linear-gradient($title-text-color 70%, $white-color 30%);
+  padding-bottom: 0px;
+}
 
-  .choice-title {
-    padding-top: 50px;
-  }
-
-  .choice-container {
-    padding-bottom: 70px;
-  }
+.main-problems-title {
+  width: 280px;
+  margin-bottom: 30px;
 }

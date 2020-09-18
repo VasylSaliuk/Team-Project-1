@@ -24,19 +24,9 @@
     @media screen and (min-width: $desktop){
         transform: translateX(-2px) translateY(-60px); 
     }
-    
-    
-    
-    
 }
 }
-
-
-    .our-program{
-        padding-left: 74px;
-    }
-    
-    
+   
     .caption-name{
     font-style: normal;
     font-weight: bold;
@@ -142,8 +132,8 @@
 }
     .program-list{
         position: relative;
-               
-        margin-left: 60px;
+              
+        margin-left: 94px;
         margin-right: auto;
         @media screen and (min-width: $desktop){
             display: flex;
@@ -172,9 +162,7 @@
                 }
             } 
         }
-        .section{
-            padding: 50px 0px;
-        }
+        
         .img-layout{
             background-image: url('../images/mobile/our-team-mobile.png');
             background-repeat: no-repeat;
