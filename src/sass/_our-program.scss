@@ -120,18 +120,30 @@
         margin-left: 10px;
     &::before{
         content: "";
-        transform: translateY(-4.5px);
+        transform: translateY(-3.5px);
         display:inline-block ;
         margin-right: 10px;
         text-align: center;
-        width: 15px;
+        width: 14px;
         height: 2px;
         background-color: $accent-color;
     }
     @media screen and (min-width: $desktop){
         font-size: 20px;
         line-height: 1.64;
+        &::before{
+            content: "";
+            transform: translateY(-6.5px);
+            display:inline-block ;
+            margin-right: 10px;
+            text-align: center;
+            width: 14px;
+            height: 2px;
+            background-color: $accent-color;
+            
+          }
     }
+   
 }
     .program-list{
         // position: relative;
@@ -206,6 +218,9 @@
                     width: calc((100% - 15px * 4) / 2);
                     margin: 15px;
                 } 
+                @media screen and (min-width: $desktop){
+                    width: calc((100% - 15px * 6) / 3);
+                }
              }
         .choice-title{
            width: 180px; 
@@ -245,8 +260,24 @@
                 width: 13px;
                 height: 1px;
                 background-color: $accent-color;
+                
               }
               
+              @media screen and (min-width: $desktop){
+                  font-size: 20px;
+                  line-height: 1.64;
+                  &::before{
+                    content: "";
+                    transform: translateY(-6.5px);
+                    display:inline-block ;
+                    margin-right: 10px;
+                    text-align: center;
+                    width: 14px;
+                    height: 2px;
+                    background-color: $accent-color;
+                    
+                  }
+              } 
         }
 
  
@@ -256,6 +287,10 @@
     font-size: 14px;
     line-height: 1.43;
     color: $title-text-color;
+    @media screen and (min-width: $desktop){
+        font-size: 20px;
+        line-height: 1.2;
+    }
 }
         
 .choice-container{
