@@ -160,18 +160,22 @@
         margin-bottom: 7px;
     }
 
-   .img-layout{
-    position: absolute;
+//    .img-layout{
+//     position: absolute;
     
-    right: 0;
-    transform: translateY(-125%);
-    @media screen and (min-width: $desktop){
-        left: 0;
-        transform: translateY(-60%);
-        opacity: 0.5;
-    }
+//     right: 0;
+//     transform: translateY(-125%);
+//     @media screen and (min-width: $desktop){
+//         left: 0;
+//         transform: translateY(-60%);
+//         opacity: 0.5;
+//     }
 
-  }
+//   }
+.lyout-img{
+   background-image: url('./images/mobile/our-team-mobile.png'); 
+}
+
 
   
     .choice-title{
