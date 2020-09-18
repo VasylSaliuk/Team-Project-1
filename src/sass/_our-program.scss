@@ -175,7 +175,7 @@
 .lyout-img{
    background-image: url('../images/mobile/our-team-mobile.png');
    background-repeat: no-repeat; 
-   background-position: right bottom 570px;
+   background-position: right bottom 740px;
    background-size: 150px 150px;
    @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -185,7 +185,7 @@
    @media screen and (min-width: $tablet){
     background-image: url('../images/tablet/our-team-tablet.png');
     background-size: 384px 280px;
-    background-position: right bottom 380px;
+    background-position: right bottom 470px;
     @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
@@ -193,8 +193,8 @@
    }
     @media screen and (min-width: $desktop){
         background-image: url('../images/desctop/our-team-desctop.png'); 
-        background-size: 600px 430px; 
-        background-position: left bottom 220px;
+        background-size: 600px 450px; 
+        background-position: left bottom 320px;
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
