@@ -122,6 +122,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  // @media screen and (min-width: $desktop) {
+  //   padding: 0 52px;
+  // }
 }
 .hero-item {
   position: relative;
