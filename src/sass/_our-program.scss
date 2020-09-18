@@ -9,7 +9,7 @@
         display: block;
         height: 2px;
         background-color: #FFFFFF;
-        transform: translateY(154px);
+        transform: translateY(114px);
     }}}
 
    .title-w{
@@ -24,7 +24,7 @@
                 @media screen and (min-width: $desktop){
                     font-weight: 800;
                     font-size: 46px;
-                    margin-bottom: 100px;
+                    margin-bottom: 60px;
                 }
            } 
         }
@@ -173,10 +173,34 @@
 
 //   }
 .lyout-img{
-   background-image: url('./images/mobile/our-team-mobile.png'); 
+   background-image: url('../images/mobile/our-team-mobile.png');
+   background-repeat: no-repeat; 
+   background-position: right bottom 570px;
+   background-size: 150px 150px;
+   @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/our-team-mobile@2x.png');}
+
+   @media screen and (min-width: $tablet){
+    background-image: url('../images/tablet/our-team-tablet.png');
+    background-size: 384px 280px;
+    background-position: right bottom 380px;
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url('../images/tablet/our-team-tablet@2x.png');}
+   }
+    @media screen and (min-width: $desktop){
+        background-image: url('../images/desctop/our-team-desctop.png'); 
+        background-size: 600px 430px; 
+        background-position: left bottom 220px;
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+          background-image: url('../images/desctop/our-team-desctop@2x.png');
+    }}
 }
-
-
   
     .choice-title{
         width: 180px; 
