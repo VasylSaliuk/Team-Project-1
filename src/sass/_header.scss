@@ -102,6 +102,12 @@ header {
     cursor: pointer;
   }
 }
+.consultation-btn:active {
+  animation: gradient 250ms;
+  background: $accent-color;
+  color: $white-color;
+  box-shadow: none;
+}
 
 /* Кнопка-бургер */
 .menu-button,

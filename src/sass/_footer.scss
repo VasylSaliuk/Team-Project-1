@@ -28,20 +28,19 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     background-image: url(../images/footer/footer-background-768.png);
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/footer/footer-background-768@2x.png);
-  }
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/footer/footer-background-768@2x.png);
+    }
   }
 
   @media screen and (min-width: 1440px) {
     background-image: url(../images/footer/footer-background-1680.png);
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/footer/footer-background-1680@2x.png);
-      }
-    
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/footer/footer-background-1680@2x.png);
+    }
   }
 }
 
@@ -137,7 +136,7 @@
   line-height: 17px;
   letter-spacing: 0.08em;
   color: $white-color;
-  
+
   @media screen and (min-width: 1440px) {
     margin-top: 30px;
     font-size: 20px;
@@ -165,6 +164,17 @@
   text-transform: uppercase;
 
   color: $white-color;
+  @media screen and (min-width: 1440px) {
+    width: 354px;
+    height: 70px;
+  }
+}
+
+.footer-form-button-submit:active {
+  animation: gradient 250ms;
+  background: $accent-color;
+  color: $white-color;
+  box-shadow: none;
 }
 
 input::placeholder {
@@ -244,7 +254,7 @@ input::placeholder {
   // margin-right: auto;
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin: 40px 200px 40px 40px;
-    }
+  }
 
   @media screen and (min-width: 1440px) {
     margin: 80px 294px 60px 60px;
@@ -269,7 +279,7 @@ input::placeholder {
     margin-right: 39px;
     font-size: 20px;
     line-height: 24px;
-    }
+  }
 
   @media screen and (min-width: 1440px) {
     margin-right: 39px;
@@ -291,16 +301,13 @@ input::placeholder {
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     width: 24px;
-  height: 23px;
+    height: 23px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 30px;
-    height: 28px;    
+    height: 28px;
   }
-
-
-
 }
 
 .footer-img {
@@ -309,26 +316,23 @@ input::placeholder {
 
 .instagram {
   display: block;
-  
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-right: 39px;
-        }
-
-  @media screen and (min-width: 1440px) {
-    margin-right: 470px;    
   }
 
+  @media screen and (min-width: 1440px) {
+    margin-right: 470px;
+  }
 }
 
 .footer-copyright {
   background: $title-text-color;
-
 }
 
 .footer-copyright-box {
   display: block;
-  
+
   padding: 20px 50px;
 
   font-family: Montserrat;
@@ -343,7 +347,7 @@ input::placeholder {
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     display: flex;
     padding: 20px 0px 20px 40px;
-        }
+  }
 
   @media screen and (min-width: 1440px) {
     display: flex;
