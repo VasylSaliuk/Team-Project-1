@@ -3,12 +3,14 @@
 }
 
 .main-problems {
-  background-image: linear-gradient($title-text-color 70%, $white-color 30%);
+  background-image: linear-gradient($title-text-color 85%, $white-color 15%);
+  background-size: auto;
   padding-bottom: 0px;
 }
 
 .main-problems-title {
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 70px;
   font-weight: 800;
   font-size: 20px;
   line-height: 1.3;
@@ -27,5 +29,13 @@
   @media screen and (min-width: $desktop) {
     font-size: 46px;
     width: 850px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .background-img {
+    background-image: url('../images/icon-fire.png');
+    background-position: right 20px top 20px;
+    background-repeat: no-repeat;
   }
 }
