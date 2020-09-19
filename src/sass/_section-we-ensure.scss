@@ -93,8 +93,7 @@
     font-size: 16px;
   }
 }
-.we-ensure.item::before {
-  content: ' ';
+.we-ensure-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,9 +101,6 @@
   display: inline-block;
   width: 15px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/campfire.svg);
 
   @media screen and (min-width: $desktop) {
     width: 22px;
