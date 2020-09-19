@@ -3,7 +3,7 @@
 }
 
 .main-problems {
-  background-image: linear-gradient($title-text-color 84%, $white-color 16%);
+  background-image: linear-gradient($title-text-color 85%, $white-color 15%);
   background-size: auto;
   padding-bottom: 0px;
 }
@@ -34,7 +34,7 @@
 @media screen and (min-width: $desktop) {
   .background-img {
     background-image: url('../images/icon-fire.png');
-    background-position: right top -10px;
+    background-position: right 30px top -5px;
     background-repeat: no-repeat;
   }
 }
