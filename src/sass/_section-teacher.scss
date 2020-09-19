@@ -84,17 +84,13 @@
     line-height: 1.25;
   }
 }
-.teacher-achievment.item::before {
-  content: '';
+.teacher-icon {
   position: absolute;
   top: 0;
   left: 0;
   display: inline-block;
   width: 17px;
   height: 14px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/icon-check.svg);
 
   @media screen and (min-width: $desktop) {
     width: 24px;
