@@ -81,4 +81,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: $title-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+  }
 }
