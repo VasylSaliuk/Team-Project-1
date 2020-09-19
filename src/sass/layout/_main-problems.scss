@@ -4,6 +4,7 @@
 
 .main-problems {
   background-image: linear-gradient($title-text-color 70%, $white-color 30%);
+  background-size: auto;
   padding-bottom: 0px;
 }
 
@@ -28,4 +29,9 @@
     font-size: 46px;
     width: 850px;
   }
+}
+
+.background-img {
+  background-image: url('../images/sprite.svg#icon-fire');
+  background-repeat: no-repeat;
 }
