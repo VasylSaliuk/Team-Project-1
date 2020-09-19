@@ -10,8 +10,9 @@
 .footer-block-01 {
   display: block;
   height: auto;
-  background: $title-text-color;
-  background-image: url(../images/footer/footer-background-320.png);
+  // background: $title-text-color;
+  background-image: url(../images/footer/footer-background-320.png), 
+  linear-gradient($title-text-color 0%, $title-text-color 100%) ;
   align-items: center;
   text-align: center;
   background-size: cover;
@@ -22,26 +23,46 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/footer/footer-background-320@2x.png);
+    background-image: url(../images/footer/footer-background-320@2x.png), 
+    linear-gradient($title-text-color 0%, $title-text-color 100%) ;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
-    background-image: url(../images/footer/footer-background-768.png);
+    background-image: url(../images/footer/footer-background-768.png), 
+    linear-gradient($title-text-color 0%, $title-text-color 100%) ;
     @media screen and (min-device-pixel-ratio: 2),
+<<<<<<< HEAD
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-background-768@2x.png);
     }
+=======
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/footer/footer-background-768@2x.png), 
+    linear-gradient($title-text-color 0%, $title-text-color 100%) ;
+  }
+>>>>>>> developers
   }
 
   @media screen and (min-width: 1440px) {
-    background-image: url(../images/footer/footer-background-1680.png);
+    background-image: url(../images/footer/footer-background-1680.png), 
+    linear-gradient($title-text-color 0%, $title-text-color 100%) ;
     @media screen and (min-device-pixel-ratio: 2),
+<<<<<<< HEAD
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/footer/footer-background-1680@2x.png);
     }
   }
+=======
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/footer/footer-background-1680@2x.png), 
+    linear-gradient($title-text-color 0%, $title-text-color 100%) ;
+      }
+     }
+>>>>>>> developers
 }
 
 .footer-box {
@@ -140,7 +161,7 @@
   @media screen and (min-width: 1440px) {
     margin-top: 30px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1,2; 
   }
 }
 
@@ -250,8 +271,7 @@ input::placeholder {
 
 .footer-logo {
   display: block;
-  // margin-left: auto;
-  // margin-right: auto;
+  
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin: 40px 200px 40px 40px;
   }
@@ -308,6 +328,10 @@ input::placeholder {
     width: 30px;
     height: 28px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> developers
 }
 
 .footer-img {
