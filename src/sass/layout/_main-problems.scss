@@ -9,6 +9,7 @@
 }
 
 .main-problems-title {
+  margin-top: 50px;
   margin-bottom: 70px;
   font-weight: 800;
   font-size: 20px;
@@ -34,7 +35,7 @@
 @media screen and (min-width: $desktop) {
   .background-img {
     background-image: url('../images/icon-fire.png');
-    background-position: right 30px top 27px;
+    background-position: right 20px top 20px;
     background-repeat: no-repeat;
   }
 }
