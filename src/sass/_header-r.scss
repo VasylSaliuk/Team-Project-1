@@ -80,6 +80,7 @@
 .subtitle-span {
   color: $accent-color;
 }
+
 .hero-button {
   display: block;
   border: 0;
@@ -103,6 +104,14 @@
     line-height: 70px;
   }
 }
+
+.hero-button:active {
+  animation: gradient 250ms;
+  background: $accent-color;
+  color: $white-color;
+  box-shadow: none;
+}
+
 .hero-photo {
   margin: 0 auto;
   padding-bottom: 77px;
