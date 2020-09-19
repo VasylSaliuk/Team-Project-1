@@ -7,12 +7,10 @@
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
     mobileMenuRef.classList.toggle('is-open');
-
     const close = document.querySelectorAll('[data-menu-button-close]');
     for (const c of close) {
       c.addEventListener('click', clickHandler);}
-    
-    function clickHandler(e) {
+     function clickHandler(e) {
       console.log('close');
       menuBtnRef.classList.toggle('is-open');
       mobileMenuRef.classList.toggle('is-open');
