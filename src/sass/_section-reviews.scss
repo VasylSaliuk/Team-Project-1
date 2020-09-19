@@ -1,3 +1,52 @@
+.slider {
+    position: relative;
+    display: block;
+    width: 375px;
+    height: 780px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 335px;
+        height: 560px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 335px;
+        height: 810px;
+    }
+}
+
+.slider-wrap {
+    display: flex;
+    position: absolute;
+    // width: 335px;
+
+    // @media screen and (max-width: 767px) {
+        
+    // }
+}
+
+.slider-item {
+    display: block;
+    padding: 20px 20px 30px 20px;
+    max-width: 335px;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: auto;
+    margin-bottom: 15px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.photo-senior img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    width: 90px;
+    height: auto;
+}
+
 .icon {
     fill: currentColor;
     transition: background-color $timing-function;
@@ -37,11 +86,6 @@
     100% {
         background-color: aqua;
     }
-}
-
-.card-senior {
-    padding: 20px 20px 30px 20px;
-    text-align: center;
 }
 
 .name-senior {
