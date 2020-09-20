@@ -15,6 +15,7 @@
 // }
 /* Лента слайдов */
 .slick-track {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,7 @@
 /* Стрелки */
 .slider .slick-arrow {
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     z-index: 10;
     font-size: 0;
     border: 0;
@@ -43,7 +44,7 @@
     background-position: center;
     border: 0;
     width: 40px;
-    height: 40px;
+    height: 60px;
 }
 
 .slider .slick-arrow.slick-next {
@@ -52,7 +53,7 @@
     background-position: center;
     border: 0;
     width: 40px;
-    height: 40px;
+    height: 60px;
     background-color: #ffffff;
 }
 
@@ -126,14 +127,20 @@
 // }
 
 .sliderbig-item {
-    // display: block;
     padding: 20px 20px 30px 20px;
     max-width: 335px;
     text-align: center;
-    // margin-right: 15px;
-    // margin-left: auto;
-    // margin-bottom: 15px;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and (min-width: $tablet) {
+        padding: 40px 40px 40px 40px;
+        max-width: 688px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 50px 80px 50px 80px;
+        max-width: 1090px;
+    }
 }
 
 .photo-senior img {
