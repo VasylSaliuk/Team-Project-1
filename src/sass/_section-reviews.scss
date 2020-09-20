@@ -13,7 +13,7 @@
     margin: 0;
 }
 
-.slider {
+.sliderbig {
 
     @media screen and (max-width: 767px) {
         padding-left: 40px;
@@ -21,15 +21,34 @@
     } 
 }
 
-.slider .slick-dots li{
+/* Точки (булиты) */
+.sliderbig .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderbig .slick-dots li{
     list-style: none;
 }
 
+// .slider .slick-dots button {
+    
+// }
+
 /* Элемент точки */
-.slider .slick-dots button{
+.sliderbig .slick-dots button{
     font-size: 0;
+    width: 54px;
+    height: 54px;
     border-radius: 50px;
+    background-image: url('../images/slider/mini-photo/Tonia-mini.jpg'),
+        url('../images/slider/mini-photo/Yanina-mini.jpg');
     border: 0;
+}
+
+.sliderbig .slick-slide-control00 {
+    background-image: url('../images/slider/mini-photo/Tonia-mini.jpg');
 }
 
 /*Маленький слайдер*/
@@ -52,9 +71,9 @@
     transition: all 0.3s ease 0s;
 
     @media screen and (max-width: 767px) {
-        &:nth-child(n + 5) {
-            display: none;
-        }
+        // &:nth-child(n + 5) {
+        //     display: none;
+        // }
     }
 }
 
@@ -124,6 +143,9 @@
 
     @media screen and (max-width: 767px) {
         text-align: center;
+        &:nth-child(n + 4) {
+            display: none;
+        }
     }
 
     @media screen and (min-width: $tablet) {

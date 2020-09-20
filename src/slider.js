@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $('.slider').slick({
-        arrows:false,
-        dots:false,
+    $('.sliderbig').slick({
+        arrows:true,
+        dots:true,
         adaptiveHeight:false,
-        slidesToShow: 7,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite:true,
         speed:1000,
@@ -12,12 +12,5 @@ $(document).ready(function () {
         waitForAnimate:true,
         variableWidth: false,
         centerMode:false,
-        asNavFor:".sliderbig"
     });
-    
-    $('.sliderbig').slick({
-        arrows:true,
-        fade:true,
-        asNavFor:".slider"
-    });    
 });
