@@ -1,22 +1,22 @@
 $(document).ready(function () {
     $('.slider').slick({
-        arrows:true,
+        arrows:false,
         dots:false,
         adaptiveHeight:false,
         slidesToShow: 7,
         slidesToScroll: 1,
         infinite:true,
         speed:1000,
-        autoplay:false,
+        autoplay:true,
         autoplaySpeed:10000,
-        waitForAnimate:false,
+        waitForAnimate:true,
         variableWidth: false,
-        centerMode:true,
+        centerMode:false,
         asNavFor:".sliderbig"
     });
     
     $('.sliderbig').slick({
-        arrows:false,
+        arrows:true,
         fade:true,
         asNavFor:".slider"
     });    
