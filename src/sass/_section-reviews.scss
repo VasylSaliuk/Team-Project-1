@@ -34,9 +34,9 @@
 
 /*Маленький слайдер*/
 
-.slider .slider-item.slick-current {
-    display: none;
-}
+// .slider .slider-item.slick-current {
+//     display: none;
+// }
 
 .slider .slick-item li.slick-active button {
     background-color: transparent;
@@ -51,11 +51,11 @@
     text-align: center;
     transition: all 0.3s ease 0s;
 
-    @media screen and (max-width: 767px) {
-        &:nth-child(n + 5) {
-            display: none;
-        }
-    }
+    // @media screen and (max-width: 767px) {
+        // &:nth-child(n + 5) {
+        //     display: none;
+        // }
+    // }
 }
 
 /*Большой слайдер*/
@@ -73,11 +73,6 @@
 
     @media screen and (min-width: $tablet) {
         top: 50%;
-    }
-
-    &:hover,
-    &:focus {
-        border: transparent;
     }
 }
 
@@ -142,7 +137,7 @@
     }
 }
 
-.photo-senior img {
+.photo-senior .photo {
     margin-bottom: 30px;
     width: 150px;
     height: auto;
@@ -158,6 +153,11 @@
     @media screen and (min-width: $tablet) {
         margin-right: 45px;
     }
+}
+
+.icon {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .text-senior {
@@ -176,38 +176,38 @@
 }
 
 .social-link {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: blueviolet;
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 44px;
+    // height: 44px;
+    // border-radius: 50%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // color: blueviolet;
     transform: scale(1);
     transition: transform $timing-function;
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: rgb(14, 147, 151);
-    color: $white-color;
+    // background-color: rgb(14, 147, 151);
+    // color: $white-color;
     transform: scale(1.25);
-    animation: change-color 1000ms $timing-function;
+    // animation: change-color 1000ms $timing-function;
 }
 
-@keyframes change-color {
-    0% {
-        background-color: rgb(80, 157, 177);
-    }
-    50% {
-        background-color: aquamarine;
-    }
-    100% {
-        background-color: aqua;
-    }
-}
+// @keyframes change-color {
+//     0% {
+//         background-color: rgb(80, 157, 177);
+//     }
+//     50% {
+//         background-color: aquamarine;
+//     }
+//     100% {
+//         background-color: aqua;
+//     }
+// }
 
 .name-senior {
     margin-bottom: 10px;
