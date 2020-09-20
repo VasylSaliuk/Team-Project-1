@@ -14,20 +14,30 @@
 
 .slider .slick-arrow {
     position: absolute;
+<<<<<<< Updated upstream
     bottom: 12px;
+=======
+    bottom: 20px;
+>>>>>>> Stashed changes
     z-index: 10;
     font-size: 0;
 }
 
 .slider .slick-arrow.slick-prev {
+<<<<<<< Updated upstream
     left: 10px;
     background: url('../images/sl-arrow-left.svg') 0 0 no-repeat;
+=======
+    left: 1px;
+    background: url('../images/sl-arrow-left\ .svg') 0 0 no-repeat;
+>>>>>>> Stashed changes
     border: 0;
     width: 25px;
     height: 20px;
 }
 
 .slider .slick-arrow.slick-next {
+<<<<<<< Updated upstream
     right: 0;
     background: url('../images/sl-arrow-right.svg') 0 0 no-repeat;
     border: 0;
@@ -65,6 +75,13 @@
          url('../images/mobile/slider/mini-photo/Liza-mob-mini.jpg') 0 0 no-repeat;
     background-position: center;
     background-size: contain;
+=======
+    left: 310px;
+    background: url('../images/sl-arrow-right\ .svg') 0 0 no-repeat;
+    border: 0;
+    width: 35px;
+    height: 25px;
+>>>>>>> Stashed changes
 }
 
 // .slider {
