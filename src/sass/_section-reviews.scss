@@ -5,6 +5,7 @@
 /* Лента слайдов */
 .slick-track {
     display: flex;
+    align-items: flex-start;
 }
 
 .slider {
@@ -13,14 +14,14 @@
 
 .slider .slick-arrow {
     position: absolute;
-    top: 50%;
+    bottom: 12px;
     z-index: 10;
     font-size: 0;
 }
 
 .slider .slick-arrow.slick-prev {
     left: 10px;
-    background: url('../images/sl-arrow-left\ .svg') 0 0 no-repeat;
+    background: url('../images/sl-arrow-left.svg') 0 0 no-repeat;
     border: 0;
     width: 25px;
     height: 20px;
@@ -28,10 +29,42 @@
 
 .slider .slick-arrow.slick-next {
     right: 0;
-    background: url('../images/sl-arrow-right\ .svg') 0 0 no-repeat;
+    background: url('../images/sl-arrow-right.svg') 0 0 no-repeat;
     border: 0;
-    width: 25px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0 5px;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active{}
+
+/* Элемент точки */
+.slider .slick-dots button{
+    font-size: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.slider .slick-dots li.slick-active button {
+    background: url('../images/mobile/slider/mini-photo/Tonia-mob-mini.jpg') 0 0 no-repeat,
+         url('../images/mobile/slider/mini-photo/Yanina-mob-mini.jpg') 0 0 no-repeat,
+         url('../images/mobile/slider/mini-photo/Olia-mob-mini.jpg') 0 0 no-repeat,
+         url('../images/mobile/slider/mini-photo/Liza-mob-mini.jpg') 0 0 no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 // .slider {
