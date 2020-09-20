@@ -14,10 +14,10 @@ $(document).ready(function () {
         centerMode:true,
         asNavFor:".sliderbig"
     });
-
+    
     $('.sliderbig').slick({
         arrows:false,
         fade:true,
         asNavFor:".slider"
-    });
+    });    
 });
