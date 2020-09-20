@@ -74,6 +74,11 @@
     @media screen and (min-width: $tablet) {
         top: 50%;
     }
+
+    &:hover,
+    &::focus {
+        border: 0;
+    }
 }
 
 .sliderbig .slick-arrow.slick-prev {
