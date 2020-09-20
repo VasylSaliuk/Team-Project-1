@@ -76,8 +76,8 @@
     }
 
     &:hover,
-    &::focus {
-        border: 0;
+    &:focus {
+        border: transparent;
     }
 }
 
@@ -88,6 +88,11 @@
     border: 0;
     width: 40px;
     height: 60px;
+
+    &:hover,
+    &:focus {
+        border: transparent;
+    }
 }
 
 .sliderbig .slick-arrow.slick-next {
@@ -98,6 +103,11 @@
     width: 40px;
     height: 60px;
     background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+        border: transparent;
+    }
 }
 
 .sliderbig {
