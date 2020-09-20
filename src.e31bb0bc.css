@@ -451,6 +451,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -1832,54 +1833,17 @@ header {
   margin: 0;
 }
 
-.slider {
-  position: relative;
-  padding-left: 40px;
-  padding-right: 30px;
-}
-
-/* Стрелки */
-.slider .slick-arrow {
-  position: absolute;
-  bottom: 0;
-  z-index: 10;
-  font-size: 0;
-  border: 0;
-}
-
-.slider .slick-arrow.slick-prev {
-  left: 1px;
-  background: url("/sl-arrow-left.bd8f1e9d.svg") 0 0 no-repeat;
-  background-position: center;
-  border: 0;
-  width: 40px;
-  height: 60px;
-}
-
-.slider .slick-arrow.slick-next {
-  right: 0;
-  background: url("/sl-arrow-right.d4dea996.svg") 0 0 no-repeat;
-  background-position: center;
-  border: 0;
-  width: 40px;
-  height: 60px;
-  background-color: #ffffff;
-}
-
-.slider-item {
-  width: 54px;
-  height: 54px;
-  border-radius: 50px;
-  border: 0;
-  text-align: center;
+@media screen and (max-width: 767px) {
+  .slider {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
 }
 
 .slider .slick-dots li {
   list-style: none;
 }
 
-/* Точки (булиты) */
-/* Активная точка */
 /* Элемент точки */
 .slider .slick-dots button {
   font-size: 0;
@@ -1887,6 +1851,7 @@ header {
   border: 0;
 }
 
+/*Маленький слайдер*/
 .slider .slider-item.slick-current {
   display: none;
 }
@@ -1896,35 +1861,120 @@ header {
   border: 0;
 }
 
+.slider-item {
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+  border: 0;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+@media screen and (max-width: 767px) {
+  .slider-item:nth-child(n+5) {
+    display: none;
+  }
+}
+
+/*Большой слайдер*/
+/* Стрелки */
+.sliderbig .slick-arrow {
+  position: absolute;
+  z-index: 10;
+  font-size: 0;
+  border: 0;
+}
+@media screen and (max-width: 767px) {
+  .sliderbig .slick-arrow {
+    bottom: 2%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sliderbig .slick-arrow {
+    top: 50%;
+  }
+}
+
+.sliderbig .slick-arrow.slick-prev {
+  left: 20px;
+  background: url("/sl-arrow-left.bd8f1e9d.svg") 0 0 no-repeat;
+  background-position: center;
+  border: 0;
+  width: 40px;
+  height: 60px;
+}
+
+.sliderbig .slick-arrow.slick-next {
+  right: 0;
+  background: url("/sl-arrow-right.d4dea996.svg") 0 0 no-repeat;
+  background-position: center;
+  border: 0;
+  width: 40px;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 1440px) {
+  .sliderbig {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
 .sliderbig-item {
   padding: 20px 20px 30px 20px;
   max-width: 335px;
-  text-align: center;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+@media screen and (max-width: 767px) {
+  .sliderbig-item {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .sliderbig-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     padding: 40px 40px 40px 40px;
     max-width: 688px;
+    height: 313px;
   }
 }
 @media screen and (min-width: 1440px) {
   .sliderbig-item {
     padding: 50px 80px 50px 80px;
     max-width: 1090px;
+    height: 370px;
   }
 }
 
 .photo-senior img {
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 30px;
   width: 150px;
   height: auto;
 }
 @media screen and (max-width: 767px) {
   .photo-senior img {
+    margin-right: auto;
+    margin-left: auto;
     width: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .photo-senior {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text-senior {
+    width: 412px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .text-senior {
+    width: 706px;
   }
 }
 
@@ -1934,6 +1984,7 @@ header {
 }
 
 .social-link {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 44px;
@@ -1966,20 +2017,59 @@ header {
   }
 }
 .name-senior {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 14px;
   line-height: 1.21;
-  text-align: center;
   letter-spacing: 0.08em;
   color: #ff6b09;
 }
+@media screen and (max-width: 767px) {
+  .name-senior {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .name-senior {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .name-senior {
+    font-size: 30px;
+  }
+}
+
+.edu-senior {
+  line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .edu-senior {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .edu-senior {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
 
 .comment {
-  margin-top: 10px;
-  margin-bottom: 30px;
   color: #3d3d3d;
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .comment {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .comment {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 a.extra {
@@ -1987,6 +2077,8 @@ a.extra {
   text-decoration: underline;
 }
 
+/* Точки (булиты) */
+/* Активная точка */
 .footer {
   display: block;
   align-items: center;

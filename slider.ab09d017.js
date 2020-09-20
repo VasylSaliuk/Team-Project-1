@@ -120,22 +120,22 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"slider.js":[function(require,module,exports) {
 $(document).ready(function () {
   $('.slider').slick({
-    arrows: true,
+    arrows: false,
     dots: false,
     adaptiveHeight: false,
-    slidesToShow: 2,
+    slidesToShow: 7,
     slidesToScroll: 1,
     infinite: true,
     speed: 1000,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 10000,
-    waitForAnimate: false,
+    waitForAnimate: true,
     variableWidth: false,
-    centerMode: true,
+    centerMode: false,
     asNavFor: ".sliderbig"
   });
   $('.sliderbig').slick({
-    arrows: false,
+    arrows: true,
     fade: true,
     asNavFor: ".slider"
   });
@@ -168,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9808" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "14872" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
