@@ -132,28 +132,28 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     menuBtnRef.classList.toggle('is-open');
     menuBtnRef.setAttribute('aria-expanded', !expanded);
     mobileMenuRef.classList.toggle('is-open');
-    var close = document.querySelectorAll('[data-menu-button-close]');
-
-    var _iterator = _createForOfIteratorHelper(close),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var c = _step.value;
-        c.addEventListener('click', clickHandler);
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    function clickHandler(e) {
-      console.log('close');
-      menuBtnRef.classList.toggle('is-open');
-      mobileMenuRef.classList.toggle('is-open');
-    }
   });
+  var close = document.querySelectorAll('[data-menu-button-close]');
+
+  var _iterator = _createForOfIteratorHelper(close),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var c = _step.value;
+      c.addEventListener('click', clickHandler);
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  function clickHandler(e) {
+    console.log('close');
+    menuBtnRef.classList.toggle('is-open');
+    mobileMenuRef.classList.toggle('is-open');
+  }
 })();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -183,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11556" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9256" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

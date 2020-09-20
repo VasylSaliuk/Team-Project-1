@@ -1012,6 +1012,28 @@ header {
   }
 }
 
+.fire-button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 85px;
+  color: #ffffff;
+  display: inline-block;
+  width: 44px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url(/campfire.df7ed37a.svg);
+  background-size: contain;
+  z-index: 20;
+  cursor: pointer;
+}
+
 .problems-accent {
   color: #ff6b09;
 }
@@ -1369,7 +1391,7 @@ header {
 .lyout-img {
   background-image: url("/our-team-mobile.8b620152.png");
   background-repeat: no-repeat;
-  background-position: right bottom 740px;
+  background-position: right bottom 650px;
   background-size: 150px 150px;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -1381,7 +1403,7 @@ header {
   .lyout-img {
     background-image: url("/our-team-tablet.13a5ae5b.png");
     background-size: 384px 280px;
-    background-position: right bottom 470px;
+    background-position: right bottom 370px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -1393,7 +1415,7 @@ header {
   .lyout-img {
     background-image: url("/our-team-desctop.db1d55ca.png");
     background-size: 600px 450px;
-    background-position: left bottom 320px;
+    background-position: left bottom 220px;
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
@@ -1613,20 +1635,16 @@ header {
   }
 }
 
-.teacher-achievment.item::before {
-  content: "";
+.teacher-icon {
   position: absolute;
   top: 0;
   left: 0;
   display: inline-block;
   width: 17px;
   height: 14px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(/icon-check.72789738.svg);
 }
 @media screen and (min-width: 1440px) {
-  .teacher-achievment.item::before {
+  .teacher-icon {
     width: 24px;
     height: 20px;
   }
@@ -1669,14 +1687,7 @@ header {
 }
 
 .certificate {
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.667;
   text-decoration-line: underline;
-  background-color: transparent;
   color: #ff6b09;
 }
 @media screen and (min-width: 1440px) {
@@ -1766,7 +1777,7 @@ header {
 }
 
 .star::after {
-  content: "При условии выполнения всех заданий";
+  content: "При условии выполнения всех заданий.";
   display: block;
   opacity: 0;
   position: absolute;
@@ -1791,8 +1802,7 @@ header {
   }
 }
 
-.we-ensure.item::before {
-  content: " ";
+.we-ensure-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -1800,12 +1810,9 @@ header {
   display: inline-block;
   width: 15px;
   height: 20px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(/campfire.df7ed37a.svg);
 }
 @media screen and (min-width: 1440px) {
-  .we-ensure.item::before {
+  .we-ensure-icon {
     width: 22px;
     height: 30px;
   }
@@ -1819,36 +1826,76 @@ header {
 /* Лента слайдов */
 .slick-track {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .slider {
   position: relative;
+  padding-left: 40px;
+  padding-right: 30px;
 }
 
+/* Стрелки */
 .slider .slick-arrow {
   position: absolute;
-  top: 50%;
+  bottom: 5px;
   z-index: 10;
   font-size: 0;
+  border: 0;
 }
 
 .slider .slick-arrow.slick-prev {
-  left: 10px;
-  background: url("/sl-arrow-left .585b6812.svg") 0 0 no-repeat;
+  left: 1px;
+  background: url("/sl-arrow-left.bd8f1e9d.svg") 0 0 no-repeat;
+  background-position: center;
   border: 0;
-  width: 25px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("/sl-arrow-right .f3ce2a82.svg") 0 0 no-repeat;
+  background: url("/sl-arrow-right.d4dea996.svg") 0 0 no-repeat;
+  background-position: center;
   border: 0;
-  width: 25px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
 }
 
 .slider-item {
+  width: 54px;
+  height: 54px;
+  border-radius: 50px;
+  border: 0;
+  text-align: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+}
+
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+.slider .slick-dots button {
+  font-size: 0;
+  border-radius: 50px;
+  border: 0;
+}
+
+.slider .slider-item.slick-current {
+  display: none;
+}
+
+.slider .slick-item li.slick-active button {
+  background-color: transparent;
+  border: 0;
+}
+
+.sliderbig-item {
   padding: 20px 20px 30px 20px;
   max-width: 335px;
   text-align: center;
@@ -1859,8 +1906,13 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  width: 90px;
+  width: 150px;
   height: auto;
+}
+@media screen and (max-width: 767px) {
+  .photo-senior img {
+    width: 90px;
+  }
 }
 
 .icon {
