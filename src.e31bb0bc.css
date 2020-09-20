@@ -1825,6 +1825,7 @@ header {
 
 /* Лента слайдов */
 .slick-track {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1840,7 +1841,7 @@ header {
 /* Стрелки */
 .slider .slick-arrow {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   z-index: 10;
   font-size: 0;
   border: 0;
@@ -1852,7 +1853,7 @@ header {
   background-position: center;
   border: 0;
   width: 40px;
-  height: 40px;
+  height: 60px;
 }
 
 .slider .slick-arrow.slick-next {
@@ -1861,7 +1862,7 @@ header {
   background-position: center;
   border: 0;
   width: 40px;
-  height: 40px;
+  height: 60px;
   background-color: #ffffff;
 }
 
@@ -1900,6 +1901,18 @@ header {
   max-width: 335px;
   text-align: center;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+@media screen and (min-width: 768px) {
+  .sliderbig-item {
+    padding: 40px 40px 40px 40px;
+    max-width: 688px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sliderbig-item {
+    padding: 50px 80px 50px 80px;
+    max-width: 1090px;
+  }
 }
 
 .photo-senior img {
