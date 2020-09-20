@@ -397,6 +397,10 @@ html {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 *,
 *::before,
 *::after {
@@ -1852,10 +1856,6 @@ header {
 }
 
 /*Маленький слайдер*/
-.slider .slider-item.slick-current {
-  display: none;
-}
-
 .slider .slick-item li.slick-active button {
   background-color: transparent;
   border: 0;
@@ -1868,11 +1868,6 @@ header {
   border: 0;
   text-align: center;
   transition: all 0.3s ease 0s;
-}
-@media screen and (max-width: 767px) {
-  .slider-item:nth-child(n+5) {
-    display: none;
-  }
 }
 
 /*Большой слайдер*/
@@ -1948,13 +1943,13 @@ header {
   }
 }
 
-.photo-senior img {
+.photo-senior .photo {
   margin-bottom: 30px;
   width: 150px;
   height: auto;
 }
 @media screen and (max-width: 767px) {
-  .photo-senior img {
+  .photo-senior .photo {
     margin-right: auto;
     margin-left: auto;
     width: 90px;
@@ -1965,6 +1960,11 @@ header {
   .photo-senior {
     margin-right: 45px;
   }
+}
+
+.icon {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1985,37 +1985,15 @@ header {
 
 .social-link {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: blueviolet;
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #0e9397;
-  color: #ffffff;
   transform: scale(1.25);
-  animation: change-color 1000ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes change-color {
-  0% {
-    background-color: #509db1;
-  }
-  50% {
-    background-color: aquamarine;
-  }
-  100% {
-    background-color: aqua;
-  }
-}
 .name-senior {
   margin-bottom: 10px;
   font-weight: 800;
