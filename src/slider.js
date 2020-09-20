@@ -1,10 +1,23 @@
 $(document).ready(function () {
     $('.slider').slick({
-        arrows: true,
-        dots: true,
-        adaptiveHeight: false,
-        speed: 1000,
-        autoplay: true,
-        autoplaySpeed: 10000
+        arrows:true,
+        dots:false,
+        adaptiveHeight:false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite:true,
+        speed:1000,
+        autoplay:false,
+        autoplaySpeed:10000,
+        waitForAnimate:false,
+        variableWidth: false,
+        centerMode:true,
+        asNavFor:".sliderbig"
+    });
+
+    $('.sliderbig').slick({
+        arrows:false,
+        fade:true,
+        asNavFor:".slider"
     });
 });

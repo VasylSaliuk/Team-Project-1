@@ -2,69 +2,97 @@
 .slick-list {
     overflow: hidden;
 }
+
+// .slider .slick-list {
+//     width: 375px;
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     text-align: center;
+// }
+
+// .slider .slick-track {
+//     width: 200px;
+// }
 /* Лента слайдов */
 .slick-track {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    // width: 54px;
+    margin: 0;
 }
 
 .slider {
     position: relative;
+    padding-left: 40px;
+    padding-right: 30px;
 }
 
+/* Стрелки */
 .slider .slick-arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     z-index: 10;
     font-size: 0;
+    border: 0;
 }
 
 .slider .slick-arrow.slick-prev {
     left: 1px;
     background: url('../images/sl-arrow-left.svg') 0 0 no-repeat;
+    background-position: center;
     border: 0;
-    width: 25px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .slider .slick-arrow.slick-next {
     right: 0;
     background: url('../images/sl-arrow-right.svg') 0 0 no-repeat;
+    background-position: center;
     border: 0;
-    width: 35px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
 }
 
-/* Точки (булиты) */
-.slider .slick-dots{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider-item {
+    // width: 100px;
+    // margin-right: -10px;
+    height: 54px;
+    border-radius: 50px;
+    border: 0;
+    text-align: center;
+    // transition: all 0.3s ease 0s;
 }
 
 .slider .slick-dots li{
     list-style: none;
-    margin: 0 5px;
 }
+
+/* Точки (булиты) */
+// .slider .slick-dots{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
 /* Активная точка */
-.slider .slick-dots li.slick-active{}
+// .slider .slick-dots li.slick-active{}
 
 /* Элемент точки */
 .slider .slick-dots button{
     font-size: 0;
-    width: 54px;
-    height: 54px;
     border-radius: 50px;
     border: 0;
 }
 
-.slider .slick-dots li.slick-active button {
-    background: url('../images/mobile/slider/mini-photo/Tonia-mob-mini.jpg') 0 0 no-repeat,
-         url('../images/mobile/slider/mini-photo/Yanina-mob-mini.jpg') 0 0 no-repeat,
-         url('../images/mobile/slider/mini-photo/Olia-mob-mini.jpg') 0 0 no-repeat,
-         url('../images/mobile/slider/mini-photo/Liza-mob-mini.jpg') 0 0 no-repeat;
-    background-position: center;
-    background-size: contain;
+.slider .slider-item.slick-current {
+    display: none;
+}
+
+.slider .slick-item li.slick-active button {
+    background-color: transparent;
+    border: 0;
 }
 
 // .slider {
@@ -96,7 +124,7 @@
 //     // }
 // }
 
-.slider-item {
+.sliderbig-item {
     // display: block;
     padding: 20px 20px 30px 20px;
     max-width: 335px;
