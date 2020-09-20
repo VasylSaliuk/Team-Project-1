@@ -132,14 +132,7 @@
   }
 }
 .certificate {
-  margin: 0;
-  padding: 0;
-  border: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.667;
   text-decoration-line: underline;
-  background-color: transparent;
 
   color: $accent-color;
   @media screen and (min-width: $desktop) {
