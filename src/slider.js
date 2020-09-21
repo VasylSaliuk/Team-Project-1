@@ -3,7 +3,7 @@ $(document).ready(function () {
         arrows:false,
         dots:true,
         adaptiveHeight:false,
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 1,
         infinite:true,
         speed:1000,
@@ -21,11 +21,11 @@ $(document).ready(function () {
             {
                 breakpoint:767,
                     settings: {
-                    slidesToShow:3
+                    slidesToShow:2
                 }
             }
         ],
-        mobileFirst:true
+        mobileFirst:false
     });
     $('.sliderbig').slick({
         arrows: true,
