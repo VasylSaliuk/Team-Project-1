@@ -123,7 +123,7 @@ $(document).ready(function () {
     arrows: false,
     dots: true,
     adaptiveHeight: false,
-    slidesToShow: 7,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     speed: 1000,
@@ -140,10 +140,10 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 767,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }],
-    mobileFirst: true
+    mobileFirst: false
   });
   $('.sliderbig').slick({
     arrows: true,
@@ -179,7 +179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8339" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "11528" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
