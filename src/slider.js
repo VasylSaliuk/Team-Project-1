@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('.slider').slick({
-        arrows:true,
+        arrows:false,
         dots:true,
-        adaptiveHeight:true,
+        adaptiveHeight:false,
         slidesToShow: 7,
         slidesToScroll: 1,
         infinite:true,
@@ -15,11 +15,21 @@ $(document).ready(function () {
         swipe:true,
         waitForAnimate:true,
         variableWidth: false,
-        centerMode:false,
-        asNavFor:".sliderbig"
+        centerMode:true,
+        asNavFor: ".sliderbig",
+        responsive: [
+            {
+                breakpoint:767,
+                    settings: {
+                    slidesToShow:3
+                }
+            }
+        ],
+        mobileFirst:true
     });
     $('.sliderbig').slick({
-        arrows: false,
+        arrows: true,
+        fade:true,
         asNavFor:".slider"
     });
      
