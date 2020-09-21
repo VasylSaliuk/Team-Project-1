@@ -121,18 +121,29 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 $(document).ready(function () {
   $('.slider').slick({
     arrows: false,
-    dots: false,
+    dots: true,
     adaptiveHeight: false,
     slidesToShow: 7,
     slidesToScroll: 1,
     infinite: true,
     speed: 1000,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 10000,
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    swipe: true,
     waitForAnimate: true,
     variableWidth: false,
-    centerMode: false,
-    asNavFor: ".sliderbig"
+    centerMode: true,
+    asNavFor: ".sliderbig",
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 3
+      }
+    }],
+    mobileFirst: true
   });
   $('.sliderbig').slick({
     arrows: true,
@@ -168,7 +179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8274" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8339" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

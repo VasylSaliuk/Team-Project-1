@@ -1823,7 +1823,6 @@ header {
   }
 }
 
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
@@ -1832,42 +1831,46 @@ header {
 .slick-track {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .slider {
-    padding-left: 40px;
-    padding-right: 30px;
+.slider .slick-list.slick-track {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .slider .slick-list {
+    padding-left: 50px;
+    padding-right: 50px;
   }
+}
+@media screen and (min-width: 1440px) {
+  .slider .slick-list {
+    padding-left: 420px;
+    padding-right: 370px;
+  }
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider .slick-dots li {
   list-style: none;
+  margin: 0 10px;
 }
 
-/* Элемент точки */
 .slider .slick-dots button {
   font-size: 0;
-  border-radius: 50px;
-  border: 0;
 }
 
-/*Маленький слайдер*/
-.slider .slick-item li.slick-active button {
+.slider .slick-dots li.slick-active button {
   background-color: transparent;
-  border: 0;
-}
-
-.slider-item {
-  width: 54px;
-  height: 54px;
-  border-radius: 50px;
-  border: 0;
-  text-align: center;
-  transition: all 0.3s ease 0s;
+  border: 1px solid #ffffff;
 }
 
 /*Большой слайдер*/
@@ -1876,7 +1879,6 @@ header {
   position: absolute;
   z-index: 10;
   font-size: 0;
-  border: 0;
 }
 @media screen and (max-width: 767px) {
   .sliderbig .slick-arrow {
@@ -1890,12 +1892,12 @@ header {
 }
 
 .sliderbig .slick-arrow.slick-prev {
-  left: 20px;
+  left: 0px;
   background: url("/sl-arrow-left.bd8f1e9d.svg") 0 0 no-repeat;
   background-position: center;
   border: 0;
-  width: 40px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
 
 .sliderbig .slick-arrow.slick-next {
@@ -1903,11 +1905,11 @@ header {
   background: url("/sl-arrow-right.d4dea996.svg") 0 0 no-repeat;
   background-position: center;
   border: 0;
-  width: 40px;
-  height: 60px;
-  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
 }
 
+/*Элемент слайдера*/
 @media screen and (min-width: 1440px) {
   .sliderbig {
     padding-left: 125px;
@@ -2055,8 +2057,6 @@ a.extra {
   text-decoration: underline;
 }
 
-/* Точки (булиты) */
-/* Активная точка */
 .footer {
   display: block;
   align-items: center;
